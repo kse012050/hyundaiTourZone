@@ -1,0 +1,9 @@
+.mainSliderArea{width: 1900px;}
+.mainSliderArea .swiper-slide img{width: 100%; }
+/* .mainSliderArea .swiper-pagination{width: 400px; height: 95px; left: auto; right: 0; bottom: 0; background-color: white;} */
+.mainSliderArea .mainSlider_page{position: absolute; right: 0; bottom: 0; width: 400px; height: 95px; background-color: white; z-index: 10;}
+.mainSliderArea .mainSlider_page > div{width: 240px; height: 100%; display: flex; justify-content: flex-end; align-items: center;}
+.mainSliderArea .mainSlider_page > div *{position: static; margin-top: 0;}
+.mainSliderArea .mainSlider_page > div .swiper-pagination{width: auto; font-size: 18px; font-weight: 900;}
+.mainSliderArea .mainSlider_page > div .swiper-button-prev::after,
+.mainSliderArea .mainSlider_page > div .swiper-button-next::after{font-size: 20px; width: auto; height: auto; color: black;}
