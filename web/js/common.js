@@ -2,6 +2,7 @@
     
     menu();
     mainSlider();
+    tab();    
 // });
 
 function menu(){
@@ -25,5 +26,14 @@ function mainSlider(){
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+    });
+}
+
+function tab(){
+    $('.tabBtn li').click(function(){
+        $('.tabBtn li').removeClass('active');
+        $(this).addClass('active');
+        $('.tabContants li').removeClass('active');
+        $('.tabContants li').eq($(this).index()).addClass('active');
     });
 }
