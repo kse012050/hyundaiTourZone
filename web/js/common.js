@@ -17,6 +17,7 @@ function menu(){
 }
 
 function mainSlider(){
+    // 메인 슬라이더
     var mainSlider = new Swiper('.mainSliderArea .swiper-container', {
         pagination: {
             el: '.mainSliderArea .swiper-pagination',
@@ -25,6 +26,13 @@ function mainSlider(){
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+        },
+    });
+
+    // 메인 베나
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
         },
     });
 }

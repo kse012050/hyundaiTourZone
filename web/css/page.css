@@ -1,5 +1,8 @@
 .plusIcon{text-indent: -9999px; display: inline-block; width: 100px; height: 100px; background: white url('../images/plusIcon.png') no-repeat center; box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);}
 
+.underLine{position: relative;}
+.underLine::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: black;}
+
 /* 메인 슬라이더 */
 .mainSliderArea{width: 1900px; margin-bottom: 120px;}
 .mainSliderArea .swiper-slide img{width: 100%; }
@@ -64,15 +67,80 @@
 .mainBenefitArea > ul.tabContants li > div:nth-child(2) > a::before{content: ''; display: inline-block; width: 19px; height: 15px; background: url('../images/checkIcon.png') no-repeat center / cover;}
 
 /* 메인 추천 */
+.mainRecomArea{margin-bottom: 120px;}
 .mainRecomArea h2{font-size: 34px; font-weight: 700; margin-bottom: 30px;}
 .mainRecomArea ul{display: flex; flex-wrap: wrap;}
-.mainRecomArea ul li{width: calc((100% - 60px) / 3);}
+.mainRecomArea ul li{width: calc((100% - 60px) / 3); padding-bottom: 35px; border-bottom: 1px solid #dadada;}
 .mainRecomArea ul li:nth-child(2),
 .mainRecomArea ul li:nth-child(5){margin: 0 30px;}
-.mainRecomArea ul li figure > div{position: relative;}
+.mainRecomArea ul li:not(:nth-child(-n + 3)){margin-top: 80px;}
+.mainRecomArea ul li figure > div{position: relative; margin-bottom: 20px;}
 .mainRecomArea ul li figure > div img{width: 100%;}
-.mainRecomArea ul li figure figcaption{}
-.mainRecomArea ul li figure figcaption div{}
-.mainRecomArea ul li figure figcaption h3{}
-.mainRecomArea ul li figure figcaption p{}
-.mainRecomArea ul li figure figcaption mark{}
+.mainRecomArea ul li figure figcaption{font-weight: 700;}
+.mainRecomArea ul li figure figcaption div{font-size: 16px; color: #a2a2a2; margin-bottom: 25px;}
+.mainRecomArea ul li figure figcaption h3{font-size: 20px; margin-bottom: 13px;}
+.mainRecomArea ul li figure figcaption p{font-size: 17px; margin-bottom: 20px;}
+.mainRecomArea ul li figure figcaption mark{display: inline-block; font-size: 30px; color: #ae894d; background-color: transparent;}
+
+/* 메인 베너 */
+.mainBannerArea{text-align: center; margin-bottom: 120px;}
+.mainBannerArea .swiper-container{height: 480px; background:url('../images/mainBannerBG.png') no-repeat center / cover;}
+.mainBannerArea .swiper-slide{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.mainBannerArea .swiper-slide div{display: flex; margin-bottom: 30px;}
+.mainBannerArea .swiper-slide div img:not(:last-of-type){margin-right: 20px;}
+.mainBannerArea .swiper-slide p{font-size: 22px; font-weight: 700; color: white; padding-bottom: 5px; margin-bottom: 45px;}
+.mainBannerArea .swiper-slide p::after{background-color: white;}
+.mainBannerArea .swiper-slide h3{font-size: 50px; font-weight: 900; color: white; font-family: 'Montserrat', sans-serif;}
+.mainBannerArea .swiper-slide h3 span{display: block; font-size: 39px; font-weight: 900; margin-top: 15px;}
+/* 메인 베너 페이저 */
+.mainBannerArea .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+{background-color: white;}
+.mainBannerArea .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active
+{width: 42px; border-radius: 30px; transition: 0.3s width;}
+
+
+/* 메인 상담 */
+.mainCounselArea{margin-bottom: 120px;}
+.mainCounselArea ul{display: flex; color: white; text-align: center ;margin-bottom: 40px;}
+.mainCounselArea ul li{width: calc((100% - 60px) / 3); height: 300px; padding: 55px 0 60px; box-sizing: border-box; background-color: #bd9c68; border-radius: 25px;}
+.mainCounselArea ul li:nth-child(2){margin: 0 30px;}
+.mainCounselArea ul li p{height: 100%; display: flex; flex-direction: column; justify-content: flex-end; font-size: 26px; font-weight: 700; color: white; background-repeat: no-repeat; background-position: center top; }
+.mainCounselArea ul li:nth-child(1) p{background-image: url('../images/mainCounselIcon01.png');}
+.mainCounselArea ul li:nth-child(2) p{background-image: url('../images/mainCounselIcon02.png');}
+.mainCounselArea ul li:nth-child(3) p{background-image: url('../images/mainCounselIcon03.png');}
+.mainCounselArea ul li p strong{display: inline-block; font-size: 48px; font-weight: 400; margin-top:10px; }
+.mainCounselArea > div{display: flex; flex-wrap: wrap; justify-content: center; text-align: center;}
+.mainCounselArea > div p{font-size: 18px; font-weight: 500; color: #757575;}
+.mainCounselArea > div p:first-of-type{padding-right: 15px; margin-right: 15px; position: relative;}
+.mainCounselArea > div p:first-of-type::after{content: ''; position: absolute; right: 0; top: 0; width: 1px; height: 100%; background-color: #757575;}
+.mainCounselArea > div p:last-of-type{width: 100%; margin-top: 10px;}
+
+
+/* 메인 게시판 */
+.mainBoardArea{ border-top: 1px solid #e0e0e0; margin-bottom: 120px;}
+.mainBoardArea h2{display: none;}
+.mainBoardArea > div{ padding: 40px 0; font-weight: 700; border-bottom: 1px solid #e0e0e0; position: relative;}
+.mainBoardArea > div h3{font-size: 28px;  margin-bottom: 40px;}
+.mainBoardArea > div ul{display: flex; justify-content: space-between;}
+.mainBoardArea > div ul li{width: calc((100% - 160px) / 3);}
+.mainBoardArea > div ul li:nth-child(2){margin: 0 80px;}
+.mainBoardArea > div ul li p{font-size: 18px; font-weight: 500; color: #757575; white-space: nowrap; overflow: hidden;}
+.mainBoardArea > div .plusIcon{width: 50px; height: 50px; position: absolute; right: 0; top: 30px;}
+
+
+
+
+/* 메인 sns */
+.snsArea{display: flex; justify-content: center; margin-bottom: 120px;}
+.snsArea li:not(:last-of-type){margin-right: 20px;}
+
+
+/* 메인 바텀 */
+.mainBottomArea{background-color: #313131; padding: 80px 0; }
+.mainBottomArea > div{display: flex; justify-content: space-between;}
+.mainBottomArea > div > div{}
+.mainBottomArea > div > div:last-of-type{width: 400px;}
+.mainBottomArea > div > div h3{font-size: 20px; font-weight: 900; color: white; margin-bottom: 20px;}
+.mainBottomArea > div > div ul:not(:last-of-type){margin-bottom: 40px;}
+.mainBottomArea > div > div ul li:not(:last-of-type){margin-bottom: 10px;}
+.mainBottomArea > div > div ul li a{font-size: 18px; font-weight: 500; color: #d6d5d5;}
