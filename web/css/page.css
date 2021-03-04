@@ -1,4 +1,5 @@
-.mainSliderArea{width: 1900px;}
+/* 메인 슬라이더 */
+.mainSliderArea{width: 1900px; margin-bottom: 120px;}
 .mainSliderArea .swiper-slide img{width: 100%; }
 /* .mainSliderArea .swiper-pagination{width: 400px; height: 95px; left: auto; right: 0; bottom: 0; background-color: white;} */
 .mainSliderArea .mainSlider_page{position: absolute; right: 0; bottom: 0; width: 400px; height: 95px; background-color: white; z-index: 10;}
@@ -7,3 +8,26 @@
 .mainSliderArea .mainSlider_page > div .swiper-pagination{width: auto; font-size: 18px; font-weight: 900;}
 .mainSliderArea .mainSlider_page > div .swiper-button-prev::after,
 .mainSliderArea .mainSlider_page > div .swiper-button-next::after{font-size: 20px; width: auto; height: auto; color: black;}
+
+
+/* 메인 예약 */
+.mainReservationArea{}
+
+.mainReservationArea figure{}
+.mainReservationArea figure figcaption{}
+.mainReservationArea figure figcaption h3{font-size: 28px; font-weight: 700; margin-bottom: 15px;}
+.mainReservationArea figure figcaption p{font-size: 18px; font-weight: 700; line-height: 28px;}
+
+.mainReservationArea div:not(:last-child){margin-bottom: 80px;}
+.mainReservationArea div > *{width: calc(100% / 2 - 80px / 2); float: left;}
+.mainReservationArea div > *:nth-child(2n + 1){margin-right: 80px;}
+.mainReservationArea div figure a{display: block; margin-bottom: 40px; }
+.mainReservationArea div figure a img{width: 100%;}
+
+.mainReservationArea > div::after{content: ''; display: block; visibility: hidden; clear: both;}
+.mainReservationArea > div:first-of-type{}
+.mainReservationArea > div:first-of-type h2{font-size: 36px; font-weight: 700; line-height: 49px; margin-bottom: 70px;}
+.mainReservationArea > div:first-of-type > *:nth-child(2n){float: right;}
+
+.mainReservationArea > figure{width: 1400px; margin: 0 auto 100px; background: url('../images/mainReservationImg03.jpg') no-repeat center / cover;}
+.mainReservationArea > figure figcaption{height: 372px; padding: 40px 0; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-end; color: white;}
