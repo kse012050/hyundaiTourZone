@@ -27,6 +27,9 @@ function mainSlider(){
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        autoplay:{
+            delay: 3000
+        }
     });
 
     // 메인 베나

@@ -3,8 +3,9 @@
 .underLine{position: relative;}
 .underLine::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: black;}
 
+
 /* 메인 슬라이더 */
-.mainSliderArea{width: 1900px;  margin: 0 auto 120px;}
+.mainSliderArea{margin-bottom: 120px;}
 .mainSliderArea .swiper-slide img{width: 100%; }
 /* .mainSliderArea .swiper-pagination{width: 400px; height: 95px; left: auto; right: 0; bottom: 0; background-color: white;} */
 .mainSliderArea .mainSlider_page{position: absolute; right: 0; bottom: 0; width: 600px; height: 95px; background-color: white; z-index: 10; border-top-left-radius: 50px;}
@@ -55,19 +56,23 @@
 .mainBenefitArea > div ul.tabBtn li.active::after{content: ''; position: absolute; left: 0; bottom: -2px; width: 100%; height: 3px; background-color: #ae894d;}
 .mainBenefitArea > ul.tabContants{height: 670px;}
 .mainBenefitArea > ul.tabContants li::after{content: ''; display: block; visibility: hidden; clear: both;}
-.mainBenefitArea > ul.tabContants li{display: none; height: 100%; background-color: #f5f1ee;}
-.mainBenefitArea > ul.tabContants li.active{display: block;}
-.mainBenefitArea > ul.tabContants li > div{height: 100%; float: left;}
-.mainBenefitArea > ul.tabContants li > div:nth-child(1){width: 610px; display: flex; align-items: flex-end; }
-.mainBenefitArea > ul.tabContants li > div:nth-child(1) img{width: 100%;}
-.mainBenefitArea > ul.tabContants li > div:nth-child(2){width: 590px; padding: 70px 40px 50px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start;}
-.mainBenefitArea > ul.tabContants li > div:nth-child(2) h3{font-size: 30px; font-weight: 700; color: #ae894d; line-height: 40px; margin-bottom: 20px;}
-.mainBenefitArea > ul.tabContants li > div:nth-child(2) p{font-size: 18px; font-weight: 500; line-height: 28px;}
-.mainBenefitArea > ul.tabContants li > div:nth-child(2) p:not(:last-of-type){margin-bottom: 30px;}
-.mainBenefitArea > ul.tabContants li > div:nth-child(2) p strong{display: inline-block; font-size: 24px; font-weight: 700; line-height: 34px; position: relative;}
-.mainBenefitArea > ul.tabContants li > div:nth-child(2) p strong::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: black;}
-.mainBenefitArea > ul.tabContants li > div:nth-child(2) > a{margin-top: auto; font-size: 24px; font-weight: 700; color: white; width: 240px; height: 70px; background-color: #956e2f; padding: 0 38px 0 30px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; border-radius: 50px;}
-.mainBenefitArea > ul.tabContants li > div:nth-child(2) > a::before{content: ''; display: inline-block; width: 19px; height: 15px; background: url('../images/checkIcon.png') no-repeat center / cover;}
+.mainBenefitArea > ul.tabContants li.active{display: flex;}
+/* .mainBenefitArea > ul.tabContants li > div{height: 100%; float: left;} */
+/* .mainBenefitArea > ul.tabContants li > div:nth-child(1){width: 610px; display: flex; align-items: flex-end; }
+.mainBenefitArea > ul.tabContants li > div:nth-child(1) img{width: 100%;} */
+.mainBenefitArea > ul.tabContants li{display: none; width: 1200px; height: 100%; padding: 70px 40px 50px 650px; box-sizing: border-box; flex-direction: column; justify-content: flex-start; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.mainBenefitArea > ul.tabContants li:nth-child(1){background-image: url('../images/mainBenefitTabImg011.png')}
+.mainBenefitArea > ul.tabContants li:nth-child(2){background-image: url('../images/mainBenefitTabImg022.png')}
+.mainBenefitArea > ul.tabContants li:nth-child(3){background-image: url('../images/mainBenefitTabImg033.png')}
+.mainBenefitArea > ul.tabContants li:nth-child(4){background-image: url('../images/mainBenefitTabImg044.png')}
+.mainBenefitArea > ul.tabContants li:nth-child(5){background-image: url('../images/mainBenefitTabImg055.png')}
+.mainBenefitArea > ul.tabContants li h3{font-size: 30px; font-weight: 700; color: #ae894d; line-height: 40px; margin-bottom: 20px;}
+.mainBenefitArea > ul.tabContants li p{font-size: 18px; font-weight: 500; line-height: 28px;}
+.mainBenefitArea > ul.tabContants li p:not(:last-of-type){margin-bottom: 30px;}
+.mainBenefitArea > ul.tabContants li p strong{display: inline-block; font-size: 24px; font-weight: 700; line-height: 34px; position: relative;}
+.mainBenefitArea > ul.tabContants li p strong::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: black;}
+.mainBenefitArea > ul.tabContants li > a{margin-top: auto; font-size: 24px; font-weight: 700; color: white; width: 240px; height: 70px; background-color: #956e2f; padding: 0 38px 0 30px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; border-radius: 50px;}
+.mainBenefitArea > ul.tabContants li > a::before{content: ''; display: inline-block; width: 19px; height: 15px; background: url('../images/checkIcon.png') no-repeat center / cover;}
 
 /* 메인 추천 */
 .mainRecomArea{margin-bottom: 120px;}
@@ -77,8 +82,8 @@
 .mainRecomArea ul li:nth-child(2),
 .mainRecomArea ul li:nth-child(5){margin: 0 30px;}
 .mainRecomArea ul li:not(:nth-child(-n + 3)){margin-top: 80px;}
-.mainRecomArea ul li figure > div{position: relative; margin-bottom: 20px;}
-.mainRecomArea ul li figure > div img{width: 100%;}
+.mainRecomArea ul li figure > a{display: block; position: relative; margin-bottom: 20px;}
+.mainRecomArea ul li figure > a img{width: 100%;}
 .mainRecomArea ul li figure figcaption{font-weight: 700;}
 .mainRecomArea ul li figure figcaption div{font-size: 16px; color: #a2a2a2; margin-bottom: 25px;}
 .mainRecomArea ul li figure figcaption h3{font-size: 20px; margin-bottom: 13px;}
@@ -88,7 +93,7 @@
 /* 메인 베너 */
 .mainBannerArea{text-align: center; margin-bottom: 120px;}
 .mainBannerArea .swiper-container{height: 480px; background:url('../images/mainBannerBG.png') no-repeat center / cover;}
-.mainBannerArea .swiper-slide{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.mainBannerArea .swiper-slide{display: flex; flex-direction: column; justify-content: flex-start; align-items: center; padding: 70px 0; box-sizing: border-box;}
 .mainBannerArea .swiper-slide div{display: flex; margin-bottom: 30px;}
 .mainBannerArea .swiper-slide div img:not(:last-of-type){margin-right: 20px;}
 .mainBannerArea .swiper-slide p{font-size: 22px; font-weight: 700; color: white; padding-bottom: 5px; margin-bottom: 45px;}
@@ -167,7 +172,7 @@
 .mainBottomArea > div > div > a::before{content: ''; display: inline-block; width: 145px; height: 100%; background-repeat: no-repeat; background-position: center; }
 .mainBottomArea > div > div > a:nth-of-type(1)::before{background-image: url('../images/mainBottomIcon01.png');}
 .mainBottomArea > div > div > a:nth-of-type(2)::before{background-image: url('../images/mainBottomIcon02.png');}
-.mainBottomArea > div > div > a div{display: flex; flex-direction: column; justify-content: center; font-weight: 700; color: #313131;}
+.mainBottomArea > div > div > a div{display: flex; flex-direction: column; justify-content: center; font-weight: 700; color: #313131; letter-spacing: -1px;}
 .mainBottomArea > div > div > a div > *:not(:last-child){margin-bottom: 10px;}
 .mainBottomArea > div > div > a div small{font-size: 22px;}
 .mainBottomArea > div > div > a div strong{font-size: 48px; font-weight: 400; }
