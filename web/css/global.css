@@ -36,3 +36,19 @@ nav > div > ul > li ul li:not(:last-child){margin-bottom: 23px;}
 nav > div > ul > li ul li a{font-size: 18px; font-weight: 500; color: #757575;}
 nav > div > ul > li:hover ul li a{color: black;}
 nav > div > ul ul:hover li a:hover{color: #c2a373; }
+
+
+/* footer */
+footer{background-color: #f6f6f6;}
+footer > div:first-of-type{font-size: 18px; font-weight: 500; padding: 60px 0 50px;}
+footer > div:first-of-type h2{width:225px; margin-bottom: 30px;}
+footer > div:first-of-type h2 img{width: 100%;}
+footer > div:first-of-type address{display: flex; flex-wrap: wrap; font-style: normal; margin-bottom: 40px;}
+footer > div:first-of-type address *{ line-height: 30px; letter-spacing: -1px;}
+footer > div:first-of-type address > *{margin-right: 30px;}
+footer > div:first-of-type address > div{display: flex;}
+footer > div:first-of-type address > div h4::after{content: ':';}
+footer > div:first-of-type > p{color: #757575;}
+footer > div:nth-of-type(2){border-top: 1px solid #d7d7d7;}
+footer > div:nth-of-type(2) ul{display: flex; justify-content: space-between;}
+footer > div:nth-of-type(2) ul li a{display: block; font-style: 18px; font-weight: 700; line-height: 67px; color: #535353;}

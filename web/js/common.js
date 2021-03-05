@@ -30,9 +30,9 @@ function mainSlider(){
     });
 
     // 메인 베나
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.mainBannerArea .swiper-container', {
         pagination: {
-          el: '.swiper-pagination',
+          el: '.mainBannerArea .swiper-pagination',
         },
     });
 }
