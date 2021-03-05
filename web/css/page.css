@@ -83,7 +83,7 @@
 .mainRecomArea ul li figure figcaption div{font-size: 16px; color: #a2a2a2; margin-bottom: 25px;}
 .mainRecomArea ul li figure figcaption h3{font-size: 20px; margin-bottom: 13px;}
 .mainRecomArea ul li figure figcaption p{font-size: 17px; margin-bottom: 20px;}
-.mainRecomArea ul li figure figcaption mark{display: inline-block; font-size: 30px; color: #ae894d; background-color: transparent;}
+.mainRecomArea ul li figure figcaption mark{font-size: 30px;}
 
 /* 메인 베너 */
 .mainBannerArea{text-align: center; margin-bottom: 120px;}
