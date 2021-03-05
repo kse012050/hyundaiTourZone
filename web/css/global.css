@@ -25,7 +25,8 @@ nav > div > a{font-size: 17px; font-weight: 700; color:#cda361; padding-bottom: 
 nav > div > a::before{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #cda361;}
 nav > div > a::after{content: '·';  display: inline-block; margin-left: 20px;}
 nav > div > ul{width: 100%; display: flex; justify-content: space-between; margin-top: 45px;}
-nav > div > ul > li > a{font-size: 20px; font-weight: 500; color: black; display: inline-block; position: relative; padding-bottom: 5px;}
+nav > div > ul > li > a{font-size: 20px; font-weight: 500; color: white; display: inline-block; position: relative; padding-bottom: 5px;}
+nav.active > div > ul > li > a{color: black;}
 nav > div > ul:hover > li > a{margin-bottom: 45px;}
 nav > div > ul > li:hover > a{color: #bd9c68;}
 nav > div > ul > li > a::after{display: none; content: ''; position: absolute; left: 0; bottom: -1px; width: 100%; height: 1px; background-color: #bd9c68;}
