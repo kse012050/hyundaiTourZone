@@ -214,9 +214,11 @@
 .membershipArea .counselBtnArea .onlineBtn div strong{font-size: 38px;}
 
 /* 멤버쉽 인용문 */
-.membershipArea .quoteArea{padding: 40px 0; font-size: 24px; font-weight: 700; line-height: 34px; text-align: center; border: 4px solid #ded2bf; box-sizing: border-box;}
+.membershipArea .quoteArea{padding: 40px 0; font-size: 24px; font-weight: 700; line-height: 34px; text-align: center; border: 4px solid #ded2bf; box-sizing: border-box; position: relative;}
 .membershipArea .quoteArea::before,
-.membershipArea .quoteArea::after{}
+.membershipArea .quoteArea::after{content: ''; position: absolute; top: calc(50% - 18.5px); width: 30px; height: 37px; background-color: white; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.membershipArea .quoteArea::before{left: -17.5px; background-image: url('../images/quoteIcon01.png');}
+.membershipArea .quoteArea::after{right: -17.5px; background-image: url('../images/quoteIcon02.png');}
 
 /* 멤버쉽 - 신규 상품 */
 .membershipArea .newArea{}
