@@ -1,9 +1,3 @@
-.plusIcon{text-indent: -9999px; display: inline-block; width: 100px; height: 100px; background: white url('../images/plusIcon.png') no-repeat center; box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);}
-
-.underLine{position: relative;}
-.underLine::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: black;}
-
-
 /* 메인 슬라이더 */
 .mainSliderArea{margin-bottom: 120px;}
 .mainSliderArea .swiper-slide img{width: 100%; }
@@ -88,7 +82,7 @@
 .mainRecomArea ul li figure > a > div{position: absolute; right: 10px; top:10px; width: calc(100% - 105px); display: flex; justify-content: flex-end; flex-wrap: wrap;}
 .mainRecomArea ul li figure > a > div span{display: inline-block; width: 55px; height: 55px; font-size: 15px; font-weight: 700; color:white; background-color: black; display: flex; justify-content: center; align-items: center; margin-left: 10px;}
 .mainRecomArea ul li figure figcaption{font-weight: 700;}
-.mainRecomArea ul li figure figcaption div{font-size: 16px; color: #a2a2a2; margin-bottom: 25px;}
+.mainRecomArea ul li figure figcaption div{margin-bottom: 25px;}
 .mainRecomArea ul li figure figcaption h3{font-size: 20px; margin-bottom: 13px;}
 .mainRecomArea ul li figure figcaption p{font-size: 17px; margin-bottom: 20px;}
 .mainRecomArea ul li figure figcaption mark{font-size: 30px;}
@@ -173,13 +167,62 @@
 .mainBottomArea > div > div:last-child > *:not(:last-child){margin-bottom: 20px;}
 .mainBottomArea > div > div > a{display: flex; height: 185px; background-color: #bd9c68; border-radius: 10px;}
 .mainBottomArea > div > div > a::before{content: ''; display: inline-block; width: 145px; height: 100%; background-repeat: no-repeat; background-position: center; }
-.mainBottomArea > div > div > a:nth-of-type(1)::before{background-image: url('../images/mainBottomIcon01.png');}
-.mainBottomArea > div > div > a:nth-of-type(2)::before{background-image: url('../images/mainBottomIcon02.png');}
+.mainBottomArea > div > div > a:nth-of-type(1)::before{background-image: url('../images/counselIcon01.png');}
+.mainBottomArea > div > div > a:nth-of-type(2)::before{background-image: url('../images/counselIcon02.png');}
 .mainBottomArea > div > div > a div{display: flex; flex-direction: column; justify-content: center; font-weight: 700; color: #313131; letter-spacing: -1px;}
 .mainBottomArea > div > div > a div > *:not(:last-child){margin-bottom: 10px;}
 .mainBottomArea > div > div > a div small{font-size: 22px;}
 .mainBottomArea > div > div > a div strong{font-size: 48px; font-weight: 400; }
 .mainBottomArea > div > div > a div p{font-size: 26px;}
 .mainBottomArea > div > div > p{font-size: 18px; font-weight: 500; color: #b28f57;}
+
+
+
+/* 서브페이지 */
+
+/* 멤버쉽 */
+/* 멤버쉽 타이틀 */
+.membershipArea .subTItleArea h2{background-image: url('../images/membershipTitleBG.png');}
+
+/* 멤버쉽 탭 버튼 */
+.membershipArea {}
+.membershipArea .tabBtn{display: flex; flex-wrap: wrap; border-bottom: 1px solid #e2e2e2; margin-bottom: 60px;}
+.membershipArea .tabBtn li{width: 20%; padding: 10px 0;}
+.membershipArea .tabBtn li:nth-child(-n + 5){border-bottom: 1px solid #e2e2e2;}
+.membershipArea .tabBtn li span{display: block; font-size: 20px; font-weight: 700; line-height: 45px; color: #a5a5a5; text-align: center; border-radius: 100px;}
+.membershipArea .tabBtn li.active span,
+.membershipArea .tabBtn li:hover span{color: white; background-color: #bd9c68; }
+/* 멤버쉽 탭 컨텐츠 */
+.membershipArea .tabContants{margin-bottom: 100px;}
+.membershipArea .tabContants li > *{margin-bottom: 100px;}
+
+/* 멤버쉽 상담 버튼 */
+.membershipArea .counselBtnArea{display: flex;}
+.membershipArea .counselBtnArea a{width: calc((100% - 20px) / 2); height: 170px; background-color: #cead78; border-radius: 20px; padding: 30px 10px; box-sizing: border-box; display: flex; box-shadow: 0px 2px 15px 0px #cead78;}
+.membershipArea .counselBtnArea a:nth-child(2n + 1){margin-right: 20px;}
+.membershipArea .counselBtnArea a::before{content: ''; min-width: 180px; background-repeat: no-repeat; background-position: center; border-right: 1px solid rgba(0,0,0,0.3);}
+.membershipArea .counselBtnArea a div{display: flex; flex-direction: column; justify-content: space-between; color: #313131; padding-left: 40px; }
+/* 멤버쉽 상담 버튼 - 전화 */
+.membershipArea .counselBtnArea .telBtn::before{background-image: url('../images/counselIcon01.png')}
+.membershipArea .counselBtnArea .telBtn div{font-weight: 700;}
+.membershipArea .counselBtnArea .telBtn div small{font-size: 22px;}
+.membershipArea .counselBtnArea .telBtn div strong{font-size: 48px; font-weight: 400; letter-spacing: -1px;}
+.membershipArea .counselBtnArea .telBtn div p{font-size: 26px; letter-spacing: -2px;}
+/* 멤버쉽 상담 버튼 - 온라인 */
+.membershipArea .counselBtnArea .onlineBtn::before{background-image: url('../images/counselIcon03.png');}
+.membershipArea .counselBtnArea .onlineBtn div{justify-content: center;}
+.membershipArea .counselBtnArea .onlineBtn div strong{font-size: 38px;}
+
+/* 멤버쉽 인용문 */
+.membershipArea .quoteArea{padding: 40px 0; font-size: 24px; font-weight: 700; line-height: 34px; text-align: center; border: 4px solid #ded2bf; box-sizing: border-box;}
+.membershipArea .quoteArea::before,
+.membershipArea .quoteArea::after{}
+
+/* 멤버쉽 - 신규 상품 */
+.membershipArea .newArea{}
+/* .membershipArea .newArea .infoArea{margin-bottom: 20px;} */
+.membershipArea .newArea .infoArea img{width: 100%; margin-bottom: 20px;}
+
+
 
 
