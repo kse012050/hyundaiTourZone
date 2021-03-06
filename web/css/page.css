@@ -84,6 +84,9 @@
 .mainRecomArea ul li:not(:nth-child(-n + 3)){margin-top: 80px;}
 .mainRecomArea ul li figure > a{display: block; position: relative; margin-bottom: 20px;}
 .mainRecomArea ul li figure > a img{width: 100%;}
+.mainRecomArea ul li figure > a > span{position: absolute; left: 10px; top: 10px; width: 75px;}
+.mainRecomArea ul li figure > a > div{position: absolute; right: 10px; top:10px; width: calc(100% - 105px); display: flex; justify-content: flex-end; flex-wrap: wrap;}
+.mainRecomArea ul li figure > a > div span{display: inline-block; width: 55px; height: 55px; font-size: 15px; font-weight: 700; color:white; background-color: black; display: flex; justify-content: center; align-items: center; margin-left: 10px;}
 .mainRecomArea ul li figure figcaption{font-weight: 700;}
 .mainRecomArea ul li figure figcaption div{font-size: 16px; color: #a2a2a2; margin-bottom: 25px;}
 .mainRecomArea ul li figure figcaption h3{font-size: 20px; margin-bottom: 13px;}
