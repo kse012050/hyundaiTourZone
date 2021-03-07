@@ -41,10 +41,14 @@ function mainSlider(){
 }
 
 function tab(){
+    var tabIndex = 0;
     $('.tabBtn li').click(function(){
+        tabIndex = $(this).index();
         $('.tabBtn li').removeClass('active');
         $(this).addClass('active');
         $('.tabContants li').removeClass('active');
-        $('.tabContants li').eq($(this).index()).addClass('active');
+        $('.tabContants').each(function(){
+            $(this).children('li').eq(tabIndex).addClass('active');
+        })
     });
 }

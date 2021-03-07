@@ -181,6 +181,7 @@
 /* 서브페이지 */
 
 /* 회사소개 */
+.aboutUsArea .subTItleArea h2{background-image: url('../images/aboutUsTitleBG.png');}
 .aboutUsArea .contentsArea{font-weight: 700;}
 .aboutUsArea .contentsArea span{font-size: 22px; color: white; display: inline-block; width: 100px; height: 100px; background-color:#bd9c68;  display: flex; justify-content: center; align-items: center; margin-bottom: 30px;}
 .aboutUsArea .contentsArea h3{font-size: 34px; margin-bottom: 45px;}
@@ -188,10 +189,15 @@
 .aboutUsArea .contentsArea p:not(:last-of-type){margin-bottom: 30px;}
 
 .aboutUsArea .listArea{padding: 80px 0; background-color: #eee9e0;}
-.aboutUsArea .listArea ul{}
-.aboutUsArea .listArea ul li{}
-.aboutUsArea .listArea ul li h4{}
-.aboutUsArea .listArea ul li p{}
+.aboutUsArea .listArea ul{display: flex; justify-content: space-between; text-align: center;}
+.aboutUsArea .listArea ul li{width: calc((100% / 5) - 7px);}
+.aboutUsArea .listArea ul li h4{font-size: 24px; font-weight: 700; line-height: 30px; min-height: 60px; margin-bottom: 30px;}
+.aboutUsArea .listArea ul li p{font-size: 18px; font-weight: 500; line-height: 28px; padding: 370px 20px 0; letter-spacing: -1px; word-break: keep-all; background-repeat: no-repeat; background-position: center top; background-size: 100% 348px;}
+.aboutUsArea .listArea ul li:nth-child(1) p{background-image: url('../images/aboutUsListImg01.png');}
+.aboutUsArea .listArea ul li:nth-child(2) p{background-image: url('../images/aboutUsListImg02.png');}
+.aboutUsArea .listArea ul li:nth-child(3) p{background-image: url('../images/aboutUsListImg03.png');}
+.aboutUsArea .listArea ul li:nth-child(4) p{background-image: url('../images/aboutUsListImg04.png');}
+.aboutUsArea .listArea ul li:nth-child(5) p{background-image: url('../images/aboutUsListImg05.png');}
 
 /* 멤버쉽 */
 /* 멤버쉽 타이틀 */
@@ -207,7 +213,7 @@
 .membershipArea .tabBtn li:hover span{color: white; background-color: #bd9c68; }
 /* 멤버쉽 탭 컨텐츠 */
 /* .membershipArea .tabContants{margin-bottom: 100px;} */
-.membershipArea .tabContants li > *{margin-bottom: 100px;}
+.membershipArea .contentsArea .tabContants li > *:not(:last-child){margin-bottom: 100px;}
 
 /* 멤버쉽 상담 버튼 */
 .membershipArea .counselBtnArea{display: flex;}
@@ -245,6 +251,9 @@
 .goodsArea table tr td{padding: 0 20px 0 30px; border-left: 1px solid rgba(0,0,0,0.2);}
 .goodsArea table tr td div{line-height: 30px; min-height: 30px;}
 
+/* 멤버쉽 상품 사항 아이콘 */
+.goodsArea table tr td div.includedIcon{padding-left: 24px; background: url('../images/tableIcon.png') no-repeat left 7px;}
+
 /* 멤버쉽 상품 색상*/
 .goodsArea table[class |= "goods"]:not([class $= "finish"]):nth-of-type(1) caption{background-color: #ded2bf;}
 .goodsArea table[class |= "goods"]:not([class $= "finish"]):nth-of-type(1) tr{background-color: #f7f3ec;}
@@ -256,7 +265,7 @@
 .goodsArea table[class |= "goods"][class $= "finish"] caption::after{content: ' [상품가입 종료]'; }
 .goodsArea table[class |= "goods"][class $= "finish"] tr{background-color: #f0f0f0;}
 
-/* 멤버쉽 상품 사항*/
+/* 멤버쉽 상품 진행*/
 .goodsArea table.included tr{border-width: 2px; border-style: solid;}
 .goodsArea table.included tr:first-of-type{border-color:#e2bb7e;}
 .goodsArea table.included tr:nth-of-type(2){border-color:#c2c2c2;}
@@ -265,6 +274,22 @@
 .membershipArea .newArea{}
 /* .membershipArea .newArea .infoArea{margin-bottom: 20px;} */
 .membershipArea .newArea .infoArea img{width: 100%; margin-bottom: 20px;}
+
+
+/* 멤버쉽 하단  */
+/* 멤버쉽 페이지 하단 - 멤버쉽 */
+.membershipArea .membershipBottom .tabContants li{line-height: 0;}
+.membershipArea .membershipBottom .tabContants li img{width: 100%;}
+
+/* 멤버쉽 중요 고지사항*/
+.membershipArea .noticeArea{padding: 80px 0; background-color: #313131;}
+.membershipArea .noticeArea > div{}
+.membershipArea .noticeArea > div h3{font-size: 30px; font-weight: 700; color: white; margin-bottom: 20px;}
+.membershipArea .noticeArea > div ul{margin-bottom: 55px;}
+.membershipArea .noticeArea > div ul li{font-size: 18px; font-weight: 500; line-height: 29px; color: #a5a5a5; letter-spacing: -1px; padding-left: 23px; position: relative;}
+.membershipArea .noticeArea > div ul li::before{content: ''; position: absolute; width: 5px; height: 5px; left: 0; top: 13px; background: url('../images/circleIcon.png') no-repeat center/ cover;}
+.membershipArea .noticeArea .counselBtnArea a{box-shadow: none;}
+
 
 
 

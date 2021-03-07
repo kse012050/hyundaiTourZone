@@ -20,7 +20,7 @@ footer{width: 1900px; margin: 0 auto;}
 .tabContants li.active{display: block;}
 
 /* 서브페이지 */
-.subArea > section{margin-bottom: 100px;}
+/* .subArea > section{margin-bottom: 100px;} */
 .subArea > section > *:not(:last-child){margin-bottom: 100px;}
 /* 서브페이지 타이틀 */
 .subArea .subTItleArea{}
