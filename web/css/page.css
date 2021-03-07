@@ -220,6 +220,34 @@
 .membershipArea .quoteArea::before{left: -17.5px; background-image: url('../images/quoteIcon01.png');}
 .membershipArea .quoteArea::after{right: -17.5px; background-image: url('../images/quoteIcon02.png');}
 
+/* 멤버쉽 상품 */
+.goodsArea{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.goodsArea table{width: 100%; font-size: 20px; font-weight: 700; color: #757575;}
+.goodsArea table[class |= "goods"]{width: calc((100% - 20px) / 2);}
+.goodsArea table:not(:last-child){margin-bottom: 10px;}
+.goodsArea table caption{font-size: 24px; font-weight: 900; line-height: 60px; color: rgba(0,0,0,0.5);  border-radius: 10px; margin-bottom: 10px;}
+.goodsArea table tr{display: block; font-size: 20px; font-weight: 700; letter-spacing: -1px; padding: 15px 0; border-radius: 10px;}
+.goodsArea table tr:not(:last-child){margin-bottom: 10px;}
+.goodsArea table tr th{min-width: 165px; padding: 0 10px 0 30px; box-sizing: border-box; }
+.goodsArea table tr td{padding: 0 20px 0 30px; border-left: 1px solid rgba(0,0,0,0.2);}
+.goodsArea table tr td div{line-height: 30px; min-height: 30px;}
+
+/* 멤버쉽 상품 색상*/
+.goodsArea table[class |= "goods"]:not([class $= "finish"]):nth-of-type(1) caption{background-color: #ded2bf;}
+.goodsArea table[class |= "goods"]:not([class $= "finish"]):nth-of-type(1) tr{background-color: #f7f3ec;}
+.goodsArea table[class |= "goods"]:not([class $= "finish"]):nth-of-type(2) caption{background-color: #ecd98b;}
+.goodsArea table[class |= "goods"]:not([class $= "finish"]):nth-of-type(2) tr{background-color: #fcf5d8;}
+
+/* 멤버쉽 상품 종료*/
+.goodsArea table[class |= "goods"][class $= "finish"] caption{background-color: #c4c4c4;}
+.goodsArea table[class |= "goods"][class $= "finish"] caption::after{content: ' [상품가입 종료]'; }
+.goodsArea table[class |= "goods"][class $= "finish"] tr{background-color: #f0f0f0;}
+
+/* 멤버쉽 상품 사항*/
+.goodsArea table.included tr{border-width: 2px; border-style: solid;}
+.goodsArea table.included tr:first-of-type{border-color:#e2bb7e;}
+.goodsArea table.included tr:nth-of-type(2){border-color:#c2c2c2;}
+
 /* 멤버쉽 - 신규 상품 */
 .membershipArea .newArea{}
 /* .membershipArea .newArea .infoArea{margin-bottom: 20px;} */
