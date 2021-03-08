@@ -7,14 +7,15 @@
 // });
 
 function menu(){
-    $(window).scroll(function(){
-        
-        if($(window).scrollTop() > $('.header_top').height()){
-            $('nav').addClass('active');
-        }else{
-            $('nav').removeClass('active')
-        }
+    $('.menuBtn').click(function(){
+        $('header').toggleClass('active');
     });
+    $('header .header_center nav > ul > li > a').click(function(e){
+        $('header .header_center nav > ul > li > a').removeClass('active');
+        $(this).addClass('active');
+        e.preventDefault();
+        $(this).siblings().slideToggle();
+    })
 }
 
 function mainSlider(){
@@ -29,7 +30,7 @@ function mainSlider(){
             prevEl: '.swiper-button-prev',
         },
         autoplay:{
-            delay: 3000
+            delay: 5000
         }
     });
 
@@ -52,6 +53,14 @@ function tab(){
         $('.tabContants').each(function(){
             $(this).children('li').eq(tabIndex).addClass('active');
         })
+
+        $('.new').addClass('active')
+        $('.finish').removeClass('active')
+
+        if($(this).attr('data-tab') == 'finish'){
+            $('.new').removeClass('active')
+            $('.finish').addClass('active')
+        }
     });
 }
 
