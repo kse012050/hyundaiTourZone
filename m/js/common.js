@@ -29,7 +29,7 @@ function mainSlider(){
             prevEl: '.swiper-button-prev',
         },
         autoplay:{
-            delay: 5000
+            delay: 3000
         }
     });
 
@@ -52,14 +52,6 @@ function tab(){
         $('.tabContants').each(function(){
             $(this).children('li').eq(tabIndex).addClass('active');
         })
-
-        $('.new').addClass('active')
-        $('.finish').removeClass('active')
-
-        if($(this).attr('data-tab') == 'finish'){
-            $('.new').removeClass('active')
-            $('.finish').addClass('active')
-        }
     });
 }
 
