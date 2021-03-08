@@ -135,3 +135,26 @@ footer > div:first-of-type > p{color: #757575;}
 footer > div:nth-of-type(2){border-top: 1px solid #d7d7d7;}
 footer > div:nth-of-type(2) ul{display: flex; justify-content: space-between;}
 footer > div:nth-of-type(2) ul li a{display: block; font-style: 18px; font-weight: 700; line-height: 67px; color: #535353;}
+
+
+/* 팝업 */
+.popupArea{display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%;  justify-content: center; align-items: center; background-color: rgba(0,0,0,0.8); z-index: 1000;}
+.popupArea.active{display: flex;}
+.popupArea > *{position: relative;}
+.popupArea button.closeBtn{position: absolute; top: 20px; right: 25px; width: 20px; height: 20px; background: url('../images/closeIcon.png') no-repeat center; border: none; text-indent: -9999px;}
+.popupArea .finishBtn{width: 240px; height: 70px; background-color: #956e2f; border-radius: 100px; font-size: 24px; font-weight: 700; color: white; border: none;}
+
+.receptionArea form{background-color: #f7f7f7;}
+.receptionArea form fieldset{width: 1000px; height: 640px;  box-sizing: border-box; text-align: center;}
+.receptionArea form fieldset legend{display: block; width: 100%; font-size: 30px; font-weight: 700; padding: 120px 0 30px; background-color: white; background: url('../images/popipIcon.png') no-repeat center 40px;}
+.receptionArea form fieldset ul{padding: 40px 0;}
+.receptionArea form fieldset ul li{width: 720px; margin: 0 auto; display: flex; align-items: center;}
+.receptionArea form fieldset ul li:not(:last-child){margin-bottom: 20px;}
+.receptionArea form fieldset ul li label{min-width: 160px; font-size: 18px; font-weight: 700; color:#757575; text-align: left; padding-left: 40px; box-sizing: border-box;}
+.receptionArea form fieldset ul li input[type="text"]{width: 400px; height: 50px; font-size: 18px; border:1px solid #d4d4d4; padding: 0 20px; box-sizing: border-box;}
+.receptionArea form fieldset input[type="submit"]{}
+
+.receptionFinishArea > div{width: 1000px; height: 530px; padding-left: 515px; padding-bottom: 60px; box-sizing: border-box; background: url('../images/popupBG.png') no-repeat center / cover; display: flex; flex-direction: column; justify-content: flex-end;}
+.receptionFinishArea > div p{font-size: 20px; font-weight: 700; line-height: 30px;}
+.receptionFinishArea > div p:not(:last-of-type){margin-bottom: 30px;}
+.receptionFinishArea > div p:last-of-type{margin-bottom: 55px;}

@@ -213,7 +213,7 @@
 .membershipArea .tabBtn li:hover span{color: white; background-color: #bd9c68; }
 /* 멤버쉽 탭 컨텐츠 */
 /* .membershipArea .tabContants{margin-bottom: 100px;} */
-.membershipArea .contentsArea .tabContants li > *:not(:last-child){margin-bottom: 100px;}
+.membershipArea .contentsArea .tabContants > li > *:not(:last-child){margin-bottom: 100px;}
 
 /* 멤버쉽 상담 버튼 */
 .membershipArea .counselBtnArea{display: flex;}
