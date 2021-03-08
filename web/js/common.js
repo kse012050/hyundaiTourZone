@@ -47,6 +47,7 @@ function tab(){
         tabIndex = $(this).index();
         $('.tabBtn li').removeClass('active');
         $(this).addClass('active');
+        $('.page-sub span').html($(this).children().html());
         $('.tabContants li').removeClass('active');
         $('.tabContants').each(function(){
             $(this).children('li').eq(tabIndex).addClass('active');
