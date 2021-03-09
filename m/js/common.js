@@ -62,6 +62,34 @@ function tab(){
             $('.finish').addClass('active')
         }
     });
+
+    var mainBenefitIdx = 0;
+    $('.mainBenefitArea > .tabBtnArea button').click(function(){
+        $('.tabBtn li').each(function(){
+            if($(this).hasClass('active')){
+                mainBenefitIdx = $(this).index();
+            }
+        })
+        if($(this).hasClass('nextBtn')){
+            if($('.tabBtn li').length -2 >= mainBenefitIdx){
+                $('.tabContants li').removeClass('active');
+                $('.tabContants li').eq(mainBenefitIdx + 1).addClass('active');
+                $('.tabBtn li').eq(mainBenefitIdx).removeClass('active');
+                $('.tabBtn li').eq(mainBenefitIdx + 1).addClass('active');
+            }
+        }else{
+            if(0 < mainBenefitIdx){
+                $('.tabContants li').removeClass('active');
+                $('.tabContants li').eq(mainBenefitIdx - 1).addClass('active');
+                $('.tabBtn li').eq(mainBenefitIdx).removeClass('active');
+                $('.tabBtn li').eq(mainBenefitIdx - 1).addClass('active');
+            }
+        }
+        console.log(
+            $('.tabBtn li.active').position().left
+        )
+        $('.mainBenefitArea > .tabBtnArea > div').scrollLeft($('.tabBtn li.active').position().left);
+    })
 }
 
 function popup(){

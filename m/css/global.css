@@ -46,9 +46,7 @@ div[class |= "page"]{font-size: 1.250em; color: #a2a2a2;}
 div.page-sub{text-align: right; margin-top: 1.500em;}
 
 /* 사이즈 */
-.contents1900,
 nav > div,
-footer{max-width: 1900px; margin: 0 auto;}
 .contentsSize{padding: 0 1.875em;}
 .contentsSizeMargin{margin: 0 1.875em;}
 
@@ -59,7 +57,6 @@ footer{max-width: 1900px; margin: 0 auto;}
 .tabContants li.active{display: block;}
 
 /* 서브페이지 */
-/* .subArea > section{margin-bottom: 100px;} */
 .subArea > section > *:not(:last-child):not(.subTItleArea){margin-bottom: 6.250em;}
 /* 서브페이지 타이틀 */
 .subArea .subTItleArea{margin-bottom: 2.813em;}
@@ -100,8 +97,6 @@ header .header_center .loginBtnArea div a:nth-child(1)::before{background-image:
 header .header_center .loginBtnArea div a:nth-child(2)::before{background-image: url('../images/headerTopIcon02.png');}
 header .header_center .loginBtnArea div a:not(:last-child){margin-right: 35px;}
 header .header_center nav{padding-top: 3.750em; padding-bottom: 3.750em; font-weight: 500;}
-header .header_center nav > ul{}
-header .header_center nav > ul > li{}
 header .header_center nav > ul > li:not(:last-child){margin-bottom: 3.750em;}
 header .header_center nav > ul > li > a{font-size: 1.875em; }
 header .header_center nav > ul > li > a.active{color: #bd9c68;}
@@ -147,20 +142,21 @@ footer > div:nth-of-type(2) ul li:not(:last-child) a{margin-right: 2.273em;}
 .popupArea{display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%;  justify-content: center; align-items: center; background-color: rgba(0,0,0,0.8); z-index: 1000;}
 .popupArea.active{display: flex;}
 .popupArea > *{position: relative;}
-.popupArea button.closeBtn{position: absolute; top: 20px; right: 25px; width: 20px; height: 20px; background: url('../images/closeIcon.png') no-repeat center; border: none; text-indent: -9999px;}
-.popupArea .finishBtn{width: 240px; height: 70px; background-color: #956e2f; border-radius: 100px; font-size: 24px; font-weight: 700; color: white; border: none;}
+.popupArea button.closeBtn{position: absolute; top: 1.250em; right: 1.250em; width: 2.500em; height: 2.500em; background: url('../images/closeIcon.png') no-repeat center; border: none; text-indent: -9999px;}
+.popupArea .finishBtn{width: 8.788em; height: 2.424em; background-color: #956e2f; border-radius: 100px; font-size: 2.063em; font-weight: 700; color: white; border: none;}
 
-.receptionArea form{background-color: #f7f7f7;}
-.receptionArea form fieldset{width: 1000px; height: 640px;  box-sizing: border-box; text-align: center;}
-.receptionArea form fieldset legend{display: block; width: 100%; font-size: 30px; font-weight: 700; padding: 120px 0 30px; background-color: white; background: url('../images/popipIcon.png') no-repeat center 40px;}
-.receptionArea form fieldset ul{padding: 40px 0;}
-.receptionArea form fieldset ul li{width: 720px; margin: 0 auto; display: flex; align-items: center;}
-.receptionArea form fieldset ul li:not(:last-child){margin-bottom: 20px;}
-.receptionArea form fieldset ul li label{min-width: 160px; font-size: 18px; font-weight: 700; color:#757575; text-align: left; padding-left: 40px; box-sizing: border-box;}
-.receptionArea form fieldset ul li input[type="text"]{width: 400px; height: 50px; font-size: 18px; border:1px solid #d4d4d4; padding: 0 20px; box-sizing: border-box;}
-.receptionArea form fieldset input[type="submit"]{}
+.receptionArea form{background-color: #f7f7f7; width: 90%; }
+.receptionArea form fieldset{height: 51.875em;  box-sizing: border-box; text-align: center;}
+.receptionArea form fieldset legend{display: block; width: 100%; font-size: 2.250em; font-weight: 700; padding: 4.833em 0 1.667em;  background:white url('../images/popipIcon.png') no-repeat center 1.333em; background-size: 3.667em;}
+.receptionArea form fieldset ul{padding: 3.125em 2.500em 1.875em;}
+.receptionArea form fieldset ul li{width: 100%; margin: 0 auto; display: flex; align-items: center;}
+.receptionArea form fieldset ul li:not(:last-child){margin-bottom: 1.875em;}
+.receptionArea form fieldset ul li label{min-width: 6.818em; font-size: 1.375em; font-weight: 700; color:#757575; text-align: left; }
+.receptionArea form fieldset ul li input[type="text"]{width:calc(100% - 6.818em); height: 2.727em; font-size: 1.375em; border:1px solid #d4d4d4; padding: 0 20px; box-sizing: border-box;}
 
-.receptionFinishArea > div{width: 1000px; height: 530px; padding-left: 515px; padding-bottom: 60px; box-sizing: border-box; background: url('../images/popupBG.png') no-repeat center / cover; display: flex; flex-direction: column; justify-content: flex-end;}
-.receptionFinishArea > div p{font-size: 20px; font-weight: 700; line-height: 30px;}
-.receptionFinishArea > div p:not(:last-of-type){margin-bottom: 30px;}
-.receptionFinishArea > div p:last-of-type{margin-bottom: 55px;}
+.receptionFinishArea > div{width: 90%; height: 100%; overflow: auto;}
+.receptionFinishArea > div div{width: 100%; height: 66.250em; padding: 35.313em 2.813em 5.000em; box-sizing: border-box; background: url('../images/popupBG.png') no-repeat center / cover; display: flex; flex-direction: column; justify-content: flex-end;}
+.receptionFinishArea > div div p{font-size: 1.500em; font-weight: 700; line-height: 1.417em;}
+.receptionFinishArea > div div p:not(:last-of-type){margin-bottom: 1.667em;}
+.receptionFinishArea > div div p:last-of-type{margin-bottom: 2.917em;}
+.receptionFinishArea > div div .finishBtn{display: block; margin: 0 auto;}

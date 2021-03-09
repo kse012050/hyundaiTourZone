@@ -2,13 +2,6 @@
 .mainSliderArea{margin-bottom: 6.875em;}
 .mainSliderArea .swiper-slide{background-repeat: no-repeat; background-position: center; background-size: cover;}
 .mainSliderArea .swiper-slide img{width: 100%; }
-/* .mainSliderArea .swiper-slide.mainSlider01{background-image: url('../images/mainSliderBG01.png')} */
-/* .mainSliderArea .swiper-slide.mainSlider02{background-image: url('../images/mainSliderBG02.png')} */
-/* .mainSliderArea .swiper-slide.mainSlider03{background-image: url('../images/mainSliderBG03.png')} */
-/* .mainSliderArea .swiper-slide.mainSlider04{background-image: url('../images/mainSliderBG04.png')} */
-/* .mainSliderArea .swiper-slide.mainSlider05{background-image: url('../images/mainSliderBG05.png')} */
-/* .mainSliderArea .swiper-slide.mainSlider06{background-image: url('../images/mainSliderBG06.png')} */
-/* .mainSliderArea .swiper-pagination{width: 400px; height: 95px; left: auto; right: 0; bottom: 0; background-color: white;} */
 .mainSliderArea .mainSlider_page{position: absolute; right: 0; bottom: 0; width: 17.188em; height: 95px; background-color: white; z-index: 10; border-top-left-radius: 50px; box-sizing: border-box;}
 .mainSliderArea .mainSlider_page > div{width: 100%; height: 100%; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box;}
 .mainSliderArea .mainSlider_page > div *{position: static; margin-top: 0;}
@@ -24,8 +17,6 @@
 .mainReservationArea{margin-bottom: 7.500em;}
 .mainReservationArea .plusIcon{position: absolute; right: 0; bottom: -30px;}
 
-.mainReservationArea figure{}
-.mainReservationArea figure figcaption{}
 .mainReservationArea figure figcaption h3{font-size: 2.125em; font-weight: 700; margin-bottom: 0.441em;}
 .mainReservationArea figure figcaption p{font-size: 1.375em; font-weight: 700; line-height: 1.545em; }
 
@@ -34,7 +25,6 @@
 .mainReservationArea div figure a{display: block; margin-bottom: 2.188em; position: relative;}
 .mainReservationArea div figure a img{width: 100%;}
 
-.mainReservationArea > div:first-of-type{}
 .mainReservationArea > div:first-of-type h2{font-size: 2.500em; font-weight: 700; line-height: 1.400em; margin-bottom: 1.250em;}
 
 .mainReservationArea > figure{width: 100%; margin: 0 auto 6.875em; background: url('../images/mainReservationImg03.jpg') no-repeat center / cover;}
@@ -45,12 +35,17 @@
 /* 메인 예약 */
 .mainBenefitArea{padding: 6.250em 0 5.000em; background-color: #f6f6f6; margin-bottom: 7.813em;}
 .mainBenefitArea .titleArea h2{font-size: 2.500em; font-weight: 700; line-height: 1.500em; margin-bottom: 1.500em; position: relative;}
-.mainBenefitArea > .tabBtnArea{border-bottom: 1px solid rgba(0,0,0,0.15); margin-bottom: 60px;}
-.mainBenefitArea > .tabBtnArea ul.tabBtn{display: flex; overflow-y: scroll; padding: 0 3.750em;}
-.mainBenefitArea > .tabBtnArea ul.tabBtn li{ flex-shrink: 0; text-align: center; font-size: 1.813em; font-weight: 700; line-height: 2em; color: #a5a5a5; padding: 0 1.379em; position: relative; cursor: pointer;}
-.mainBenefitArea > .tabBtnArea ul.tabBtn li:hover,
-.mainBenefitArea > .tabBtnArea ul.tabBtn li.active{color:#ae894d;}
-.mainBenefitArea > .tabBtnArea ul.tabBtn li.active::after{content: ''; position: absolute; left: 0; bottom: -2px; width: 100%; height: 3px; background-color: #ae894d;}
+.mainBenefitArea > .tabBtnArea{margin-bottom: 3.750em;  position: relative;}
+.mainBenefitArea > .tabBtnArea > div{overflow-y: auto; padding-bottom: 3px;}
+.mainBenefitArea > .tabBtnArea div div{display: inline-block; border-bottom: 1px solid rgba(0,0,0,0.15);}
+.mainBenefitArea > .tabBtnArea div div ul.tabBtn{display: inline-flex;  padding: 0 3.750em;}
+.mainBenefitArea > .tabBtnArea div div ul.tabBtn li{white-space: nowrap; text-align: center; font-size: 1.813em; font-weight: 700; line-height: 2em; color: #a5a5a5; padding: 0 1.379em; position: relative; cursor: pointer;}
+.mainBenefitArea > .tabBtnArea div div ul.tabBtn li:hover,
+.mainBenefitArea > .tabBtnArea div div ul.tabBtn li.active{color:#ae894d;}
+.mainBenefitArea > .tabBtnArea div div ul.tabBtn li.active::after{content: ''; position: absolute; left: 0; bottom: -2px; width: 100%; height: 3px; background-color: #ae894d;}
+.mainBenefitArea > .tabBtnArea button{text-indent: -9999px; width: 0.875em; height: 100%; position: absolute; top: 0; background-repeat: no-repeat; background-position: center; background-size: 100%; border: none; background-color: transparent;}
+.mainBenefitArea > .tabBtnArea button:nth-of-type(1){background-image: url('../images/mainBenefitBracket01.png'); left: 1.875em;}
+.mainBenefitArea > .tabBtnArea button:nth-of-type(2){background-image: url('../images/mainBenefitBracket02.png'); right: 1.875em;}
 .mainBenefitArea > ul.tabContants{height: 84.063em; }
 .mainBenefitArea > ul.tabContants li::after{content: ''; display: block; visibility: hidden; clear: both;}
 .mainBenefitArea > ul.tabContants li.active{display: flex;}
@@ -71,7 +66,6 @@
 /* 메인 추천 */
 .mainRecomArea{margin-bottom: 7.500em;}
 .mainRecomArea h2{font-size: 2.500em; font-weight: 700; margin-bottom: 1.250em;}
-.mainRecomArea ul{}           
 .mainRecomArea ul li{ margin-bottom: 5.000em; padding-bottom: 3.125em; border-bottom: 1px solid #dadada;}
 .mainRecomArea ul li figure > a{display: block; position: relative; margin-bottom: 1.250em;}
 .mainRecomArea ul li figure > a img{width: 100%;}
@@ -124,8 +118,6 @@
 .mainBoardArea h2{display: none;}
 .mainBoardArea > div{ padding: 3.125em 0; font-weight: 700; border-bottom: 1px solid #e0e0e0; position: relative;}
 .mainBoardArea > div h3{font-size: 2.125em;  margin-bottom: 1.412em;}
-.mainBoardArea > div ul{}
-.mainBoardArea > div ul li{}
 .mainBoardArea > div ul li:not(:last-child){margin-bottom: 3.125em;}
 .mainBoardArea > div ul li p{font-size: 1.500em; font-weight: 500; color: #757575; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .mainBoardArea > div ul li p:not(:last-child){margin-bottom: 0.833em;}
@@ -214,7 +206,6 @@
 .membershipArea .tabBtn li.active span,
 .membershipArea .tabBtn li:hover span{color: white; background-color: #bd9c68; }
 /* 멤버쉽 탭 컨텐츠 */
-/* .membershipArea .tabContants{margin-bottom: 100px;} */
 .membershipArea .contentsArea .tabContants > li > *:not(:last-child){margin-bottom: 6.250em;}
 
 /* 멤버쉽 상담 버튼 */
@@ -233,7 +224,7 @@
 /* 멤버쉽 상담 버튼 - 온라인 */
 .membershipArea .counselBtnArea .onlineBtn::before{background-image: url('../images/counselIcon03.png');}
 .membershipArea .counselBtnArea .onlineBtn div{flex-direction: row; justify-content: space-between; align-items: center; padding-right:1.875em;}
-.membershipArea .counselBtnArea .onlineBtn div strong{font-size: 2.625em; font-weight: 700;}
+.membershipArea .counselBtnArea .onlineBtn div strong{font-size: 2.625em; font-weight: 500; letter-spacing: -5px;}
 .membershipArea .counselBtnArea .onlineBtn div::after{content: ''; width: 1.250em; height: 100%; background: url('../images/bracketIcon02.png') no-repeat center top 55%; background-size: 1.250em;}
 /* 멤버쉽 상담 버튼 - 고객센터 */
 .membershipArea .counselBtnArea .serviceBtn::before{background-image: url('../images/counselIcon04.png');}
@@ -251,12 +242,11 @@
 /* 멤버쉽 상품 */
 .goodsArea{display: flex; flex-wrap: wrap; justify-content: space-between;}
 .goodsArea table{width: 100%; font-weight: 700; color: #757575;}
-.goodsArea table[class |= "goods"]{}
 .goodsArea table:not(:last-child){margin-bottom: 0.625em;}
 .goodsArea table caption{font-size: 1.750em; font-weight: 900; line-height: 2.500em; color: rgba(0,0,0,0.5);  border-radius: 10px; margin-bottom: 0.357em;}
 .goodsArea table tr{display: block; font-size: 1.500em; font-weight: 700; letter-spacing: -1px; padding: 0.833em 0; border-radius: 10px;}
 .goodsArea table tr:not(:last-child){margin-bottom: 0.417em;}
-.goodsArea table tr th{min-width: 6.875em; padding:0 1.250em; line-height: 1.417em; box-sizing: border-box; }
+.goodsArea table tr th{min-width: 6.875em; max-width: 6.875em; padding:0 1.250em; line-height: 1.417em; box-sizing: border-box; }
 .goodsArea table tr td{padding:0 0.625em 0 1.250em; border-left: 1px solid rgba(0,0,0,0.2);}
 .goodsArea table tr td div{line-height: 1.417em; min-height: 1em;}
 
@@ -281,8 +271,6 @@
 .goodsArea table.included tr:nth-of-type(2){border-color:#c2c2c2;}
 
 /* 멤버쉽 - 신규 상품 */
-.membershipArea .newArea{}
-/* .membershipArea .newArea .infoArea{margin-bottom: 20px;} */
 .membershipArea .newArea .infoArea img{width: 100%; margin-bottom: 1.875em;}
 
 
@@ -293,7 +281,6 @@
 
 /* 멤버쉽 중요 고지사항*/
 .membershipArea .noticeArea{padding: 5.000em 0; background-color: #313131;}
-.membershipArea .noticeArea > div{}
 .membershipArea .noticeArea > div h3{font-size: 2.250em; font-weight: 700; color: white; margin-bottom: 0.833em;}
 .membershipArea .noticeArea > div ul{margin-bottom: 3.438em;}
 .membershipArea .noticeArea > div ul li{font-size: 1.375em; font-weight: 500; line-height: 1.545em; color: #a5a5a5; letter-spacing: -1px; padding-left: 23px; position: relative;}
