@@ -14,23 +14,33 @@
     <script defer src="js/common.js"></script>
 </head>
 <body>
-    <section class="subArea">
+    <section class="wrap subArea">
+        <!-- 해더 -->
         <header>
-            <div class="header_top contents1200">
-                <a href="#">HOME</a>
-                <a href="#">로그인</a>
-                <a href="#">회원가입</a>
-                <div>
-                    <a href="#">온라인 예약확인</a>
-                    <a href="#">가입조회</a>
+            <div class="header_top">
+                <h1><img src="images/logo.png" alt="logo"></h1>
+                <div class="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+                
             </div>
-
-            <nav>
-                <div>
-                    <div class="contents1200">
-                    <h1><img src="images/logo.png" alt="logo"></h1>
+            
+            <div class="header_center">
+                <div class="subTitle">
                     <a href="#">LUXURY 골프 크루즈</a>
+                </div>
+                <div class="loginBtnArea">
+                    <a href="#">HOME</a>
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <div>
+                        <a href="#">온라인 예약확인</a>
+                        <a href="#">가입조회</a>
+                    </div>
+                </div>
+                <nav>
                     <ul>
                         <li>
                             <a href="#">멤버십 크루즈</a>
@@ -103,49 +113,46 @@
                             </ul>
                         </li>
                     </ul>
-                    </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
+            
+            <div class="header_bottom">
+                <ul>
+                    <li><a href="#">예약확인</a></li>
+                    <li><a href="#">납입조회</a></li>
+                    <li><a href="#">장바구니</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <p>고객상담</p>
+                                <mark>1800-4826</mark>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <p>가입상담</p>
+                                <mark>1800-4826</mark>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <p>여행상담</p>
+                                <mark>1800-4826</mark>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </header>
 
-        <!-- 사아트 메뉴 -->
-        <aside>
-            <h2><img src="images/logo.png" alt=""></h2>
-            <ul>
-                <li><a href="#">예약확인</a></li>
-                <li><a href="#">납입조회</a></li>
-                <li><a href="#">장바구니</a></li>
-            </ul>
-            <ul>
-                <li>
-                    <div>
-                        <a href="#">
-                            고객상담
-                            <mark>1800-4826</mark>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="#">
-                            가입상담
-                            <mark>1800-4826</mark>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <a href="#">
-                            여행상담
-                            <mark>1800-4826</mark>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </aside>
-
         <!-- 서브 페이지 -->
-        <section class="contents1900 membershipArea">
+        <section class="membershipArea">
 
             <!-- 서브 타이틀 -->
             <div class="subTItleArea">
@@ -154,13 +161,13 @@
                     현대투어존의 상품을 소개합니다.
                 </h2>
 
-                <div class="page-sub">
+                <div class="page-sub contentsSize">
                     HOME  >  멤버십 크루즈  > <span> 신규상품</span>
                 </div>
             </div>
 
             <!-- 멤버쉽 컨텐츠 -->
-            <div class="contents1200 contentsArea">
+            <div class="contentsArea contentsSize">
                 <!-- 멤버쉽 탭 버튼 -->
                 <ul class="tabBtn">
                     <li class="active" data-tab="new"><span>신규상품</span></li>
@@ -179,7 +186,7 @@
                     <li class="active newArea">
                         <div class="infoArea">
                             <img src="images/membershipImg01.png" alt="">
-                            <div class="counselBtnArea">
+                            <div class="counselBtnArea active">
                                 <a href="#" class="telBtn">
                                     <div>
                                         <small>가입상담</small>
@@ -196,8 +203,10 @@
                         </div>
 
                         <p class="quoteArea">
-                            회원가입 후 물가상승에 상관없이 가입금액 그대로~ <br/>
-                            크루즈 여행을 못가도 가족, 지인, 누구에게나 양도가 가능합니다.
+                            회원가입 후 물가상승에 상관없이 <br/>
+                            가입금액 그대로~ <br/>
+                            크루즈 여행을 못가도 가족, 지인,<br/>
+                            누구에게나 양도가 가능합니다.
                         </p>
 
                         <div class="goodsArea">
@@ -245,9 +254,40 @@
                                     <td>
                                         <div>가입 후 15회차 정상납입 후</div>
                                         <div>
-                                            여행출발전 연체 및 미납 발생 시 선지원 서비스는<br/>
-                                            불가할 수 있습니다.
+                                            여행출발전 연체 및 미납 발생 시 <br/>
+                                            선지원 서비스는 불가할 수 있습니다.
                                         </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="included">
+                                <tr>
+                                    <th>포함사항</th>
+                                    <td>
+                                        <div>
+                                            왕복 항공요금, 여행지 호텔
+                                        </div>
+                                        <div>
+                                            (2인 1실 기준), 전용차량, 크루즈 객실 및 식사 비용, 여행지 식사비용,
+                                         </div>
+                                        <div>
+                                            기항지 관광비용, 크루즈 전문인솔자 비용, 현지가이드 비용, 공동경비
+                                        </div>
+                                        <div>
+                                            (물, 기항지 팁), 가이드&기사팁,
+                                        </div>
+                                        <div>
+                                            여행자 보험
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>불포함사항</th>
+                                    <td>
+                                        <div>항공 TAX 및 항만세, 크루즈 선내팁, 미주지역 ESTA 비자비용, 기타 개인경비</div>
+                                        <div class="includedIcon">크루즈 내 유료시설 이용경비</div>
+                                        <div class="includedIcon">왕복 항공 업그레이드 및 객실 업그레이드 비용은 별도 입니다.</div>
                                     </td>
                                 </tr>
                             </table>
@@ -307,8 +347,21 @@
                                 <tr>
                                     <th>포함사항</th>
                                     <td>
-                                        <div>왕복 항공요금, 여행지 호텔(2인 1실 기준), 전용차량, 크루즈 객실 및 식사 비용, 여행지 식사비용, </div>
-                                        <div>기항지 관광비용, 크루즈 전문인솔자 비용, 현지가이드 비용, 공동경비(물, 기항지 팁), 가이드&기사팁, 여행자 보험</div>
+                                        <div>
+                                            왕복 항공요금, 여행지 호텔
+                                        </div>
+                                        <div>
+                                            (2인 1실 기준), 전용차량, 크루즈 객실 및 식사 비용, 여행지 식사비용,
+                                         </div>
+                                        <div>
+                                            기항지 관광비용, 크루즈 전문인솔자 비용, 현지가이드 비용, 공동경비
+                                        </div>
+                                        <div>
+                                            (물, 기항지 팁), 가이드&기사팁,
+                                        </div>
+                                        <div>
+                                            여행자 보험
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -480,7 +533,7 @@
 
                 <!-- 멤버쉽 중요 고지사항-->
                 <div class="noticeArea">
-                    <div class="contents1200">
+                    <div class="contentsSize">
                         <h3>중요 고지사항 안내</h3>
                         <ul>
                             <li>본 상품은 적립식 크루즈 선지원 상품으로 금전이나 금리의 지급을 대상으로 하지 않습니다.</li>
@@ -582,7 +635,7 @@
         </section>
 
         <footer>
-            <div class="contents1200">
+            <div class="contentsSize">
                 <h2><img src="images/logo.png" alt=""></h2>
                 <address>
                     <h3>(주)현대크루즈관광  </h3>
@@ -593,8 +646,6 @@
                     <div>
                         <h4>방문판매신고번호</h4>
                         <p>제2017-서울양천-0004호 </p>
-                    </div>
-                    <div>
                         <h4>대표이사</h4>
                         <p>김광원</p>
                     </div>
@@ -604,7 +655,14 @@
                     </div>
                     <div>
                         <h4>여행신고번호</h4>
-                        <p>(국외)제2017-000008호  (국내)제2017-000003호 / SGI 서울보증보험가입</p>
+                        <p>
+                            (국외)제2017-000008호  (국내)제2017-000003호 / 
+                        </p>
+                    </div>
+                    <div class="block">
+                        <p>
+                            SGI 서울보증보험가입
+                        </p>
                     </div>
                     <div>
                         <h4>TEL </h4>
@@ -623,13 +681,15 @@
                         <p>김지인</p>
                     </div>
                 </address>
-                <p>Copyright © 2021. Hyundai Cruise Tour Co.,Ltd. All rights reserved.</p>
+                <p>Copyright © 2021. Hyundai Cruise Tour Co.,Ltd.<br/> All rights reserved.</p>
             </div>
             <div>
-                <ul class="contents1200">
+                <ul>
                     <li><a href="#">회사소개</a></li>
                     <li><a href="#">이용약관</a></li>
                     <li><a href="#">해외여행표준약관</a></li>
+                </ul>
+                <ul>
                     <li><a href="#">개인정보처리(취급)방침</a></li>
                     <li><a href="#">오시는 길</a></li>
                 </ul>

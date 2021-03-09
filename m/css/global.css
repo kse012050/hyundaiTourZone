@@ -12,12 +12,14 @@
     34px = 2.125em
     35px = 2.188em
     36px = 2.250em
+    38px = 2.375em
     40px = 2.500em
     43px = 2.688em
     50px = 3.125em
     60px = 3.750em
     70px = 4.375em
     80px = 5.000em
+    100px = 6.250em
     120px = 7.500em
 */
 /* 공통 */
@@ -41,7 +43,7 @@ mark{display: inline-block; color: #ae894d; background-color: transparent;}
 .underLine::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: black;}
 /* 페이지 */
 div[class |= "page"]{font-size: 1.250em; color: #a2a2a2;}
-div.page-sub{width: 1200px; margin: 0 auto; text-align: right; margin-top: 30px;}
+div.page-sub{text-align: right; margin-top: 1.500em;}
 
 /* 사이즈 */
 .contents1900,
@@ -58,11 +60,11 @@ footer{max-width: 1900px; margin: 0 auto;}
 
 /* 서브페이지 */
 /* .subArea > section{margin-bottom: 100px;} */
-.subArea > section > *:not(:last-child){margin-bottom: 100px;}
+.subArea > section > *:not(:last-child):not(.subTItleArea){margin-bottom: 6.250em;}
 /* 서브페이지 타이틀 */
-.subArea .subTItleArea{}
-.subArea .subTItleArea h2{height: 320px; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 34px; font-weight: 900; color: white; background-repeat: no-repeat; background-position: center; background-size: cover;}
-.subArea .subTItleArea mark{font-size: 22px; font-weight: 900; color: #f4cd8f; margin-bottom: 30px;}
+.subArea .subTItleArea{margin-bottom: 2.813em;}
+.subArea .subTItleArea h2{height: 8.421em; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 2.375em; font-weight: 900; color: white; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.subArea .subTItleArea mark{font-size: 0.684em; font-weight: 900; color: #f4cd8f; margin-bottom: 1.154em;}
 
 
 header + *{padding-top: 7.500em;}

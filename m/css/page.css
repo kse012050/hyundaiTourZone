@@ -205,34 +205,34 @@
 
 /* 멤버쉽 탭 버튼 */
 .membershipArea {}
-.membershipArea .tabBtn{display: flex; flex-wrap: wrap; border-bottom: 1px solid #e2e2e2; margin-bottom: 60px;}
-.membershipArea .tabBtn li{width: 20%; padding: 10px 0;}
-.membershipArea .tabBtn li:nth-child(-n + 5){border-bottom: 1px solid #e2e2e2;}
-.membershipArea .tabBtn li span{display: block; font-size: 20px; font-weight: 700; line-height: 45px; color: #a5a5a5; text-align: center; border-radius: 100px;}
+.membershipArea .tabBtn{display: flex; flex-wrap: wrap; border-bottom: 1px solid #e2e2e2; margin-bottom: 3.750em;}
+.membershipArea .tabBtn li{width: 33.33%; padding: 0.938em 0;}
+.membershipArea .tabBtn li:nth-child(-n + 6){border-bottom: 1px solid #e2e2e2;}
+.membershipArea .tabBtn li span{display: block; font-size: 1.500em; font-weight: 700; line-height: 2.500em; color: #a5a5a5; text-align: center; border-radius: 100px;}
 .membershipArea .tabBtn li.active span,
 .membershipArea .tabBtn li:hover span{color: white; background-color: #bd9c68; }
 /* 멤버쉽 탭 컨텐츠 */
 /* .membershipArea .tabContants{margin-bottom: 100px;} */
-.membershipArea .contentsArea .tabContants > li > *:not(:last-child){margin-bottom: 100px;}
+.membershipArea .contentsArea .tabContants > li > *:not(:last-child){margin-bottom: 6.250em;}
 
 /* 멤버쉽 상담 버튼 */
 .membershipArea .counselBtnArea{display: none;}
-.membershipArea .counselBtnArea.active{display: flex;}
-.membershipArea .counselBtnArea a{width: calc((100% - 20px) / 2); height: 170px; background-color: #cead78; border-radius: 20px; padding: 30px 10px; box-sizing: border-box; display: flex; box-shadow: 0px 2px 5px 0px #cead78;}
-.membershipArea .counselBtnArea a:nth-child(2n + 1){margin-right: 20px;}
-.membershipArea .counselBtnArea a::before{content: ''; min-width: 180px; background-repeat: no-repeat; background-position: center; border-right: 1px solid rgba(0,0,0,0.3);}
-.membershipArea .counselBtnArea a div{display: flex; flex-direction: column; justify-content: space-between; width: 100%; color: #313131; padding-left: 40px; }
+.membershipArea .counselBtnArea.active{display: block;}
+.membershipArea .counselBtnArea a{display: block; height: 11.563em; background-color: #cead78; border-radius: 20px; padding: 1.875em 10px; box-sizing: border-box; display: flex; box-shadow: 0px 2px 5px 0px #cead78;}
+.membershipArea .counselBtnArea a:not(:last-of-type){margin-bottom:1.875em; }
+.membershipArea .counselBtnArea a::before{content: ''; min-width: 11.875em; background-repeat: no-repeat; background-position: center; border-right: 1px solid rgba(0,0,0,0.3); background-size:4.063em; }
+.membershipArea .counselBtnArea a div{display: flex; flex-direction: column; justify-content: space-between; width: 100%; color: #313131; padding-left: 2.188em; }
 /* 멤버쉽 상담 버튼 - 전화 */
 .membershipArea .counselBtnArea .telBtn::before{background-image: url('../images/counselIcon01.png')}
 .membershipArea .counselBtnArea div{font-weight: 700;}
-.membershipArea .counselBtnArea div small{font-size: 22px;}
-.membershipArea .counselBtnArea div strong{font-size: 48px; font-weight: 400; letter-spacing: -1px;}
-.membershipArea .counselBtnArea div p{font-size: 26px; letter-spacing: -2px;}
+.membershipArea .counselBtnArea div small{font-size: 1.625em;}
+.membershipArea .counselBtnArea div strong{font-size: 3.750em; font-weight: 400; letter-spacing: -1px;}
+.membershipArea .counselBtnArea div p{font-size: 1.875em; letter-spacing: -2px;}
 /* 멤버쉽 상담 버튼 - 온라인 */
 .membershipArea .counselBtnArea .onlineBtn::before{background-image: url('../images/counselIcon03.png');}
-.membershipArea .counselBtnArea .onlineBtn div{flex-direction: row; justify-content: space-between; align-items: center; padding-right: 30px;}
-.membershipArea .counselBtnArea .onlineBtn div strong{font-size: 38px; font-weight: 700;}
-.membershipArea .counselBtnArea .onlineBtn div::after{content: ''; width: 20px; height: 100%; background: url('../images/bracketIcon02.png') no-repeat center;}
+.membershipArea .counselBtnArea .onlineBtn div{flex-direction: row; justify-content: space-between; align-items: center; padding-right:1.875em;}
+.membershipArea .counselBtnArea .onlineBtn div strong{font-size: 2.625em; font-weight: 700;}
+.membershipArea .counselBtnArea .onlineBtn div::after{content: ''; width: 1.250em; height: 100%; background: url('../images/bracketIcon02.png') no-repeat center top 55%; background-size: 1.250em;}
 /* 멤버쉽 상담 버튼 - 고객센터 */
 .membershipArea .counselBtnArea .serviceBtn::before{background-image: url('../images/counselIcon04.png');}
 /* 멤버쉽 상담 버튼 - 여행상담 */
@@ -240,7 +240,7 @@
 
 
 /* 멤버쉽 인용문 */
-.membershipArea .quoteArea{padding: 40px 0; font-size: 24px; font-weight: 700; line-height: 34px; text-align: center; border: 4px solid #ded2bf; box-sizing: border-box; position: relative;}
+.membershipArea .quoteArea{padding: 0.893em 0; font-size: 1.750em; font-weight: 700; line-height: 1.357em; text-align: center; border: 4px solid #ded2bf; box-sizing: border-box; position: relative;}
 .membershipArea .quoteArea::before,
 .membershipArea .quoteArea::after{content: ''; position: absolute; top: calc(50% - 18.5px); width: 30px; height: 37px; background-color: white; background-repeat: no-repeat; background-position: center; background-size: cover;}
 .membershipArea .quoteArea::before{left: -17.5px; background-image: url('../images/quoteIcon01.png');}
@@ -248,24 +248,24 @@
 
 /* 멤버쉽 상품 */
 .goodsArea{display: flex; flex-wrap: wrap; justify-content: space-between;}
-.goodsArea table{width: 100%; font-size: 20px; font-weight: 700; color: #757575;}
-.goodsArea table[class |= "goods"]{width: calc((100% - 20px) / 2);}
-.goodsArea table:not(:last-child){margin-bottom: 10px;}
-.goodsArea table caption{font-size: 24px; font-weight: 900; line-height: 60px; color: rgba(0,0,0,0.5);  border-radius: 10px; margin-bottom: 10px;}
-.goodsArea table tr{display: block; font-size: 20px; font-weight: 700; letter-spacing: -1px; padding: 15px 0; border-radius: 10px;}
-.goodsArea table tr:not(:last-child){margin-bottom: 10px;}
-.goodsArea table tr th{min-width: 165px; padding: 0 10px 0 30px; box-sizing: border-box; }
-.goodsArea table tr td{padding: 0 20px 0 30px; border-left: 1px solid rgba(0,0,0,0.2);}
-.goodsArea table tr td div{line-height: 30px; min-height: 30px;}
+.goodsArea table{width: 100%; font-weight: 700; color: #757575;}
+.goodsArea table[class |= "goods"]{}
+.goodsArea table:not(:last-child){margin-bottom: 0.625em;}
+.goodsArea table caption{font-size: 1.750em; font-weight: 900; line-height: 2.500em; color: rgba(0,0,0,0.5);  border-radius: 10px; margin-bottom: 0.357em;}
+.goodsArea table tr{display: block; font-size: 1.500em; font-weight: 700; letter-spacing: -1px; padding: 0.833em 0; border-radius: 10px;}
+.goodsArea table tr:not(:last-child){margin-bottom: 0.417em;}
+.goodsArea table tr th{min-width: 6.875em; padding:0 1.250em; line-height: 1.417em; box-sizing: border-box; }
+.goodsArea table tr td{padding:0 0.625em 0 1.250em; border-left: 1px solid rgba(0,0,0,0.2);}
+.goodsArea table tr td div{line-height: 1.417em; min-height: 1em;}
 
 /* 멤버쉽 상품 사항 아이콘 */
-.goodsArea table tr td div.includedIcon{padding-left: 24px; background: url('../images/tableIcon.png') no-repeat left 7px;}
+.goodsArea table tr td div.includedIcon{padding-left: 1.250em; background: url('../images/tableIcon.png') no-repeat left 0.292em; background-size: 1em;}
 
 /* 멤버쉽 상품 색상*/
 .goodsArea table[class |= "goods"]:not([class $= "finish"]):nth-of-type(1) caption{background-color: #ded2bf;}
 .goodsArea table[class |= "goods"]:not([class $= "finish"]):nth-of-type(1) tr{background-color: #f7f3ec;}
-.goodsArea table[class |= "goods"]:not([class $= "finish"]):nth-of-type(2) caption{background-color: #ecd98b;}
-.goodsArea table[class |= "goods"]:not([class $= "finish"]):nth-of-type(2) tr{background-color: #fcf5d8;}
+.goodsArea table[class |= "goods"]:not([class $= "finish"]):nth-of-type(3) caption{background-color: #ecd98b;}
+.goodsArea table[class |= "goods"]:not([class $= "finish"]):nth-of-type(3) tr{background-color: #fcf5d8;}
 
 /* 멤버쉽 상품 종료*/
 .goodsArea table[class |= "goods"][class $= "finish"] caption{background-color: #c4c4c4;}
@@ -273,6 +273,7 @@
 .goodsArea table[class |= "goods"][class $= "finish"] tr{background-color: #f0f0f0;}
 
 /* 멤버쉽 상품 진행*/
+.goodsArea table.included:not(:last-of-type){margin-bottom: 6.250em; }
 .goodsArea table.included tr{border-width: 2px; border-style: solid;}
 .goodsArea table.included tr:first-of-type{border-color:#e2bb7e;}
 .goodsArea table.included tr:nth-of-type(2){border-color:#c2c2c2;}
@@ -280,7 +281,7 @@
 /* 멤버쉽 - 신규 상품 */
 .membershipArea .newArea{}
 /* .membershipArea .newArea .infoArea{margin-bottom: 20px;} */
-.membershipArea .newArea .infoArea img{width: 100%; margin-bottom: 20px;}
+.membershipArea .newArea .infoArea img{width: 100%; margin-bottom: 1.875em;}
 
 
 /* 멤버쉽 하단  */
@@ -289,11 +290,11 @@
 .membershipArea .membershipBottom .tabContants li img{width: 100%;}
 
 /* 멤버쉽 중요 고지사항*/
-.membershipArea .noticeArea{padding: 80px 0; background-color: #313131;}
+.membershipArea .noticeArea{padding: 5.000em 0; background-color: #313131;}
 .membershipArea .noticeArea > div{}
-.membershipArea .noticeArea > div h3{font-size: 30px; font-weight: 700; color: white; margin-bottom: 20px;}
-.membershipArea .noticeArea > div ul{margin-bottom: 55px;}
-.membershipArea .noticeArea > div ul li{font-size: 18px; font-weight: 500; line-height: 29px; color: #a5a5a5; letter-spacing: -1px; padding-left: 23px; position: relative;}
+.membershipArea .noticeArea > div h3{font-size: 2.250em; font-weight: 700; color: white; margin-bottom: 0.833em;}
+.membershipArea .noticeArea > div ul{margin-bottom: 3.438em;}
+.membershipArea .noticeArea > div ul li{font-size: 1.375em; font-weight: 500; line-height: 1.545em; color: #a5a5a5; letter-spacing: -1px; padding-left: 23px; position: relative;}
 .membershipArea .noticeArea > div ul li::before{content: ''; position: absolute; width: 5px; height: 5px; left: 0; top: 13px; background: url('../images/circleIcon.png') no-repeat center/ cover;}
 .membershipArea .noticeArea .counselBtnArea a{box-shadow: none;}
 
