@@ -8,7 +8,6 @@
 .mainSliderArea .swiper-slide.mainSlider04{background-image: url('../images/mainSliderBG04.png')}
 .mainSliderArea .swiper-slide.mainSlider05{background-image: url('../images/mainSliderBG05.png')}
 .mainSliderArea .swiper-slide.mainSlider06{background-image: url('../images/mainSliderBG06.png')}
-/* .mainSliderArea .swiper-pagination{width: 400px; height: 95px; left: auto; right: 0; bottom: 0; background-color: white;} */
 .mainSliderArea .mainSlider_page{position: absolute; right: 0; bottom: 0; width: 600px; height: 95px; background-color: white; z-index: 10; border-top-left-radius: 50px;}
 .mainSliderArea .mainSlider_page > div{width: 240px; height: 100%; display: flex; justify-content: space-between; align-items: center; padding-left: 40px; box-sizing: border-box;}
 .mainSliderArea .mainSlider_page > div *{position: static; margin-top: 0;}
@@ -24,8 +23,6 @@
 .mainReservationArea{margin-bottom: 145px;}
 .mainReservationArea .plusIcon{position: absolute; right: 0; bottom: -30px;}
 
-.mainReservationArea figure{}
-.mainReservationArea figure figcaption{}
 .mainReservationArea figure figcaption h3{font-size: 28px; font-weight: 700; margin-bottom: 15px;}
 .mainReservationArea figure figcaption p{font-size: 18px; font-weight: 700; line-height: 28px;}
 
@@ -36,7 +33,6 @@
 .mainReservationArea div figure a img{width: 100%;}
 
 .mainReservationArea > div::after{content: ''; display: block; visibility: hidden; clear: both;}
-.mainReservationArea > div:first-of-type{}
 .mainReservationArea > div:first-of-type h2{font-size: 36px; font-weight: 700; line-height: 49px; margin-bottom: 70px;}
 .mainReservationArea > div:first-of-type > *:nth-child(2n){float: right;}
 
@@ -58,9 +54,6 @@
 .mainBenefitArea > ul.tabContants{height: 670px;}
 .mainBenefitArea > ul.tabContants li::after{content: ''; display: block; visibility: hidden; clear: both;}
 .mainBenefitArea > ul.tabContants li.active{display: flex;}
-/* .mainBenefitArea > ul.tabContants li > div{height: 100%; float: left;} */
-/* .mainBenefitArea > ul.tabContants li > div:nth-child(1){width: 610px; display: flex; align-items: flex-end; }
-.mainBenefitArea > ul.tabContants li > div:nth-child(1) img{width: 100%;} */
 .mainBenefitArea > ul.tabContants li{display: none; width: 1200px; height: 100%; padding: 70px 40px 50px 650px; box-sizing: border-box; flex-direction: column; justify-content: flex-start; background-repeat: no-repeat; background-position: center; background-size: cover;}
 .mainBenefitArea > ul.tabContants li:nth-child(1){background-image: url('../images/mainBenefitTabImg011.png')}
 .mainBenefitArea > ul.tabContants li:nth-child(2){background-image: url('../images/mainBenefitTabImg022.png')}
@@ -165,7 +158,6 @@
 /* 메인 바텀 */
 .mainBottomArea{background-color: #313131; padding: 80px 0; }
 .mainBottomArea > div{display: flex; justify-content: space-between;}
-.mainBottomArea > div > div{}
 .mainBottomArea > div > div:last-of-type{width: 400px;}
 .mainBottomArea > div > div h3{font-size: 20px; font-weight: 900; color: white; margin-bottom: 20px;}
 .mainBottomArea > div > div ul:not(:last-of-type){margin-bottom: 40px;}
@@ -220,7 +212,6 @@
 .membershipArea .tabBtn li.active span,
 .membershipArea .tabBtn li:hover span{color: white; background-color: #bd9c68; }
 /* 멤버쉽 탭 컨텐츠 */
-/* .membershipArea .tabContants{margin-bottom: 100px;} */
 .membershipArea .contentsArea .tabContants > li > *:not(:last-child){margin-bottom: 100px;}
 
 /* 멤버쉽 상담 버튼 */
@@ -286,8 +277,6 @@
 .goodsArea table.included tr:nth-of-type(2){border-color:#c2c2c2;}
 
 /* 멤버쉽 - 신규 상품 */
-.membershipArea .newArea{}
-/* .membershipArea .newArea .infoArea{margin-bottom: 20px;} */
 .membershipArea .newArea .infoArea img{width: 100%; margin-bottom: 20px;}
 
 
@@ -298,7 +287,6 @@
 
 /* 멤버쉽 중요 고지사항*/
 .membershipArea .noticeArea{padding: 80px 0; background-color: #313131;}
-.membershipArea .noticeArea > div{}
 .membershipArea .noticeArea > div h3{font-size: 30px; font-weight: 700; color: white; margin-bottom: 20px;}
 .membershipArea .noticeArea > div ul{margin-bottom: 55px;}
 .membershipArea .noticeArea > div ul li{font-size: 18px; font-weight: 500; line-height: 29px; color: #a5a5a5; letter-spacing: -1px; padding-left: 23px; position: relative;}
