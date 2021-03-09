@@ -130,8 +130,11 @@
 .mainBoardArea > div ul{display: flex; justify-content: space-between;}
 .mainBoardArea > div ul li{width: calc((100% - 160px) / 3);}
 .mainBoardArea > div ul li:nth-child(2){margin: 0 80px;}
+.mainBoardArea > div ul li a{display: block;}
 .mainBoardArea > div ul li p{font-size: 18px; font-weight: 500; color: #757575; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .mainBoardArea > div ul li p:not(:last-child){margin-bottom: 20px;}
+.mainBoardArea > div ul li div.video{width: 110px; margin-bottom: 20px;}
+.mainBoardArea > div ul li div.video img{width: 100%;}
 .mainBoardArea > div ul li span{display: inline-block; font-size: 16px; color: #a2a2a2;}
 .mainBoardArea > div ul li span[class |= "answer"]{color: white; line-height: 30px; padding: 0 15px; border-radius: 100px;}
 .mainBoardArea > div ul li span[class |= "answer"][class $= "fin"]{background-color: #bd9c68;}
