@@ -63,8 +63,8 @@ footer{max-width: 1900px; margin: 0 auto;}
 .subArea > section > *:not(:last-child):not(.subTItleArea){margin-bottom: 6.250em;}
 /* 서브페이지 타이틀 */
 .subArea .subTItleArea{margin-bottom: 2.813em;}
-.subArea .subTItleArea h2{height: 8.421em; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 2.375em; font-weight: 900; color: white; background-repeat: no-repeat; background-position: center; background-size: cover;}
-.subArea .subTItleArea mark{font-size: 0.684em; font-weight: 900; color: #f4cd8f; margin-bottom: 1.154em;}
+.subArea .subTItleArea h2{height: 8.421em; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 2.375em; line-height: 1.263em; font-weight: 900; text-align: center; color: white; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.subArea .subTItleArea mark{font-size: 0.684em; font-weight: 900; color: #f4cd8f; margin-bottom: 1.154em; line-height: 1em;}
 
 
 header + *{padding-top: 7.500em;}
