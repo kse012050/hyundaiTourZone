@@ -127,17 +127,17 @@ header .header_bottom > ul:nth-of-type(2) li a mark{font-size: 2.125em; font-wei
 /* footer */
 footer{ background-color: #f6f6f6;}
 footer > div:first-of-type{ font-weight: 500; padding-top: 3.750em; padding-bottom: 2.500em;}
-footer > div:first-of-type h2{width:14.063em; margin-bottom: 30px;}
+footer > div:first-of-type h2{width:14.063em; margin-bottom: 1.875em;}
 footer > div:first-of-type h2 img{width: 100%;}
-footer > div:first-of-type address{font-size: 1.375em; display: flex; flex-wrap: wrap; font-style: normal; margin-bottom: 40px;}
+footer > div:first-of-type address{font-size: 1.375em; display: flex; flex-wrap: wrap; font-style: normal; margin-bottom: 2.500em;}
 footer > div:first-of-type address *{ line-height: 1.636em;}
 footer > div:first-of-type address > *{margin-right: 1.818em;}
 footer > div:first-of-type address > div{display: flex;}
 footer > div:first-of-type address > *.block{width: 100%;}
 footer > div:first-of-type address > div h4::after{content: ':';}
 footer > div:first-of-type > p{color: #757575; font-size: 1.250em; line-height: 1.500em;}
-footer > div:nth-of-type(2){border-top: 1px solid #d7d7d7;}
-footer > div:nth-of-type(2) ul{display: flex; justify-content:center; flex-wrap: wrap; padding: 1.875em 0;}
+footer > div:nth-of-type(2){border-top: 1px solid #d7d7d7; padding: 1.875em 0;}
+footer > div:nth-of-type(2) ul{display: flex; justify-content:center; flex-wrap: wrap; }
 footer > div:nth-of-type(2) ul:not(:last-child){margin-bottom: 1.875em;}
 footer > div:nth-of-type(2) ul li a{display: block; font-size: 1.375em; font-weight: 700; color: #535353;}
 footer > div:nth-of-type(2) ul li:not(:last-child) a{margin-right: 2.273em;}

@@ -226,7 +226,7 @@
 .membershipArea .counselBtnArea .telBtn::before{background-image: url('../images/counselIcon01.png')}
 .membershipArea .counselBtnArea div{font-weight: 700;}
 .membershipArea .counselBtnArea div small{font-size: 1.625em;}
-.membershipArea .counselBtnArea div strong{font-size: 3.750em; font-weight: 400; letter-spacing: -1px;}
+.membershipArea .counselBtnArea div strong{font-size: 3.750em; font-weight: 400;}
 .membershipArea .counselBtnArea div p{font-size: 1.875em; letter-spacing: -2px;}
 /* 멤버쉽 상담 버튼 - 온라인 */
 .membershipArea .counselBtnArea .onlineBtn::before{background-image: url('../images/counselIcon03.png');}
