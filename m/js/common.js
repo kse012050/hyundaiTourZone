@@ -64,7 +64,8 @@ function tab(){
     });
 
     var mainBenefitIdx = 0;
-    $('.mainBenefitArea > .tabBtnArea button').click(function(){
+    var mainBenefitTabIdx = 0;
+    $('.mainBenefitArea > .tabBtnArea button').click(function(e){
         $('.tabBtn li').each(function(){
             if($(this).hasClass('active')){
                 mainBenefitIdx = $(this).index();
@@ -76,6 +77,7 @@ function tab(){
                 $('.tabContants li').eq(mainBenefitIdx + 1).addClass('active');
                 $('.tabBtn li').eq(mainBenefitIdx).removeClass('active');
                 $('.tabBtn li').eq(mainBenefitIdx + 1).addClass('active');
+                mainBenefitTabIdx = mainBenefitIdx + 1;
             }
         }else{
             if(0 < mainBenefitIdx){
@@ -83,12 +85,11 @@ function tab(){
                 $('.tabContants li').eq(mainBenefitIdx - 1).addClass('active');
                 $('.tabBtn li').eq(mainBenefitIdx).removeClass('active');
                 $('.tabBtn li').eq(mainBenefitIdx - 1).addClass('active');
+                mainBenefitTabIdx = mainBenefitIdx - 1;
             }
         }
-        console.log(
-            $('.tabBtn li.active').position().left
-        )
-        $('.mainBenefitArea > .tabBtnArea > div').scrollLeft($('.tabBtn li.active').position().left);
+        $('.mainBenefitArea > .tabBtnArea > div').scrollLeft(0);
+        $('.mainBenefitArea > .tabBtnArea > div').scrollLeft($('.tabBtn li').eq(mainBenefitTabIdx).position().left );
     })
 }
 

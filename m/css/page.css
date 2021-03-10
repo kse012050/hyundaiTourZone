@@ -38,7 +38,7 @@
 .mainBenefitArea > .tabBtnArea{margin-bottom: 3.750em;  position: relative;}
 .mainBenefitArea > .tabBtnArea > div{overflow-y: auto; padding-bottom: 3px;}
 .mainBenefitArea > .tabBtnArea div div{display: inline-block; border-bottom: 1px solid rgba(0,0,0,0.15);}
-.mainBenefitArea > .tabBtnArea div div ul.tabBtn{display: inline-flex;  padding: 0 3.750em;}
+.mainBenefitArea > .tabBtnArea div div ul.tabBtn{display: inline-flex;  /* padding: 0 3.750em; */}
 .mainBenefitArea > .tabBtnArea div div ul.tabBtn li{white-space: nowrap; text-align: center; font-size: 1.813em; font-weight: 700; line-height: 2em; color: #a5a5a5; padding: 0 1.379em; position: relative; cursor: pointer;}
 .mainBenefitArea > .tabBtnArea div div ul.tabBtn li:hover,
 .mainBenefitArea > .tabBtnArea div div ul.tabBtn li.active{color:#ae894d;}
@@ -121,6 +121,8 @@
 .mainBoardArea > div ul li:not(:last-child){margin-bottom: 3.125em;}
 .mainBoardArea > div ul li p{font-size: 1.500em; font-weight: 500; color: #757575; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .mainBoardArea > div ul li p:not(:last-child){margin-bottom: 0.833em;}
+.mainBoardArea > div ul li div.video{width: 8.125em; margin-bottom:1.250em;}
+.mainBoardArea > div ul li div.video img{width: 100%;}
 .mainBoardArea > div ul li span{display: inline-block; font-size: 1.250em; color: #a2a2a2;}
 .mainBoardArea > div ul li span[class |= "answer"]{color: white; line-height: 1.750em; padding: 0 0.750em; border-radius: 100px;}
 .mainBoardArea > div ul li span[class |= "answer"][class $= "fin"]{background-color: #bd9c68;}
