@@ -43,9 +43,6 @@
 .mainBenefitArea > .tabBtnArea div div ul.tabBtn li:hover,
 .mainBenefitArea > .tabBtnArea div div ul.tabBtn li.active{color:#ae894d;}
 .mainBenefitArea > .tabBtnArea div div ul.tabBtn li.active::after{content: ''; position: absolute; left: 0; bottom: -2px; width: 100%; height: 3px; background-color: #ae894d;}
-.mainBenefitArea > .tabBtnArea button{text-indent: -9999px; width: 0.875em; height: 100%; position: absolute; top: 0; background-repeat: no-repeat; background-position: center; background-size: 100%; border: none; background-color: transparent;}
-.mainBenefitArea > .tabBtnArea button:nth-of-type(1){background-image: url('../images/mainBenefitBracket01.png'); left: 1.875em;}
-.mainBenefitArea > .tabBtnArea button:nth-of-type(2){background-image: url('../images/mainBenefitBracket02.png'); right: 1.875em;}
 .mainBenefitArea > ul.tabContants{height: 84.063em; }
 .mainBenefitArea > ul.tabContants li::after{content: ''; display: block; visibility: hidden; clear: both;}
 .mainBenefitArea > ul.tabContants li.active{display: flex;}

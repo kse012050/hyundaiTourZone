@@ -64,34 +64,6 @@ function tab(){
         }
     });
 
-    // var mainBenefitIdx = 0;
-    // var mainBenefitTabIdx = 0;
-    // $('.mainBenefitArea > .tabBtnArea button').click(function(e){
-    //     $('.tabBtn li').each(function(){
-    //         if($(this).hasClass('active')){
-    //             mainBenefitIdx = $(this).index();
-    //         }
-    //     })
-    //     if($(this).hasClass('nextBtn')){
-    //         if($('.tabBtn li').length -2 >= mainBenefitIdx){
-    //             $('.tabContants li').removeClass('active');
-    //             $('.tabContants li').eq(mainBenefitIdx + 1).addClass('active');
-    //             $('.tabBtn li').eq(mainBenefitIdx).removeClass('active');
-    //             $('.tabBtn li').eq(mainBenefitIdx + 1).addClass('active');
-    //             mainBenefitTabIdx = mainBenefitIdx + 1;
-    //         }
-    //     }else{
-    //         if(0 < mainBenefitIdx){
-    //             $('.tabContants li').removeClass('active');
-    //             $('.tabContants li').eq(mainBenefitIdx - 1).addClass('active');
-    //             $('.tabBtn li').eq(mainBenefitIdx).removeClass('active');
-    //             $('.tabBtn li').eq(mainBenefitIdx - 1).addClass('active');
-    //             mainBenefitTabIdx = mainBenefitIdx - 1;
-    //         }
-    //     }
-    //     $('.mainBenefitArea > .tabBtnArea > div').scrollLeft(0);
-    //     $('.mainBenefitArea > .tabBtnArea > div').scrollLeft($('.tabBtn li').eq(mainBenefitTabIdx).position().left );
-    // })
 }
 
 function popup(){
