@@ -34,7 +34,9 @@
 }
 
 *{letter-spacing: -2px; word-break: keep-all;}
- 
+input[type=submit] {-webkit-appearance:none;}
+
+
 mark{display: inline-block; color: #ae894d; background-color: transparent;}
 /* 플러스 아이콘 */
 .plusIcon{text-indent: -9999px; display: inline-block; width: 6.250em; height: 6.250em; background: white url('../images/plusIcon.png') no-repeat center; box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);}
@@ -98,11 +100,11 @@ header .header_center .loginBtnArea div a:nth-child(2)::before{background-image:
 header .header_center .loginBtnArea div a:not(:last-child){margin-right: 35px;}
 header .header_center nav{padding-top: 3.750em; padding-bottom: 3.750em; font-weight: 500;}
 header .header_center nav > ul > li:not(:last-child){margin-bottom: 3.750em;}
-header .header_center nav > ul > li > a{font-size: 1.875em; }
+header .header_center nav > ul > li > a{font-size: 1.875em; display: block;}
 header .header_center nav > ul > li > a.active{color: #bd9c68;}
 header .header_center nav > ul > li ul{display: none; padding: 1.25em 0; border-bottom: 1px solid rgba(0,0,0,0.2);}
 header .header_center nav > ul > li ul li{padding: 1.25em 0;}
-header .header_center nav > ul > li ul li a{font-size: 1.625em; color: #757575;}
+header .header_center nav > ul > li ul li a{font-size: 1.625em; color: #757575; display: block;}
 header .header_bottom{min-height: 20.000em;}
 header .header_bottom > ul{display: flex; background-color: #313131;}
 header .header_bottom > ul li{width: calc(100% / 3);}
@@ -124,13 +126,16 @@ footer{ background-color: #f6f6f6;}
 footer > div:first-of-type{ font-weight: 500; padding-top: 3.750em; padding-bottom: 2.500em;}
 footer > div:first-of-type h2{width:14.063em; margin-bottom: 1.875em;}
 footer > div:first-of-type h2 img{width: 100%;}
-footer > div:first-of-type address{font-size: 1.375em; display: flex; flex-wrap: wrap; font-style: normal; margin-bottom: 2.500em;}
-footer > div:first-of-type address *{ line-height: 1.636em;}
-footer > div:first-of-type address > *{margin-right: 1.818em;}
+footer > div:first-of-type address{font-size: 1.375em; display: flex; flex-wrap: wrap; font-style: normal; margin-bottom: 2.500em; letter-spacing: 0;}
+footer > div:first-of-type address *{ line-height: 1.636em; letter-spacing: -1px;}
+footer > div:first-of-type address > h3{margin-right: 1.818em;}
 footer > div:first-of-type address > div{display: flex;}
 footer > div:first-of-type address > *.block{width: 100%;}
+footer > div:first-of-type address > div:nth-of-type(6),
+footer > div:first-of-type address > div:nth-of-type(8){margin-right: 1.818em;}
 footer > div:first-of-type address > div h4::after{content: ':';}
-footer > div:first-of-type > p{color: #757575; font-size: 1.250em; line-height: 1.500em;}
+footer > div:first-of-type address p:not(:last-of-type){margin-right: 1.818em;}
+footer > div:first-of-type > p{color: #757575; font-size: 1.250em; line-height: 1.500em; letter-spacing: 0;}
 footer > div:nth-of-type(2){border-top: 1px solid #d7d7d7; padding: 1.875em 0;}
 footer > div:nth-of-type(2) ul{display: flex; justify-content:center; flex-wrap: wrap; }
 footer > div:nth-of-type(2) ul:not(:last-child){margin-bottom: 1.875em;}
