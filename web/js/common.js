@@ -4,6 +4,7 @@
     popup();
     mainSlider();
     tab();    
+    videoPopup();
 // });
 
 function menu(){
@@ -92,5 +93,21 @@ function popup(){
 
     $('.receptionFinishArea .finishBtn').click(function(){
         $('.receptionFinishArea').removeClass('active');
+    })
+}
+
+function videoPopup(){
+    $('.videoPopupBtn').click(function(){
+        $('.videoPopup').addClass('active');
+        $('.mainVideoArea figure iframe')[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
+        $('.videoPopup iframe')[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');
+    });
+    $('.videoPopup , .videoPopup .closeBtn').click(function(){
+        $('.videoPopup').removeClass('active');
+        $('.videoPopup iframe')[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
+    });
+    $('.videoPopup > div').click(function(e){
+        e.stopPropagation();
+
     })
 }
