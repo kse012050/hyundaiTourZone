@@ -8,9 +8,17 @@
     <style>
         *{margin: 0; padding: 0;}
         div{height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;}
-        div a{font-size: 50px; text-decoration: none; color: black;}
+        div a{text-decoration: none; color: black;}
         div a:hover{color: #ae894d;}
-        a:not(:last-of-type){margin-bottom: 30px;}
+        @media screen and (min-width : 451px) {
+            div a{font-size: 50px;}
+            a:not(:last-of-type){margin-bottom: 30px;}
+        }
+        
+        @media screen and (max-width : 450px) {
+            div a{font-size: 11.1111vw;}
+            a:not(:last-of-type){margin-bottom: 6.6666vw;}
+        }
     </style>
 </head>
 <body>
