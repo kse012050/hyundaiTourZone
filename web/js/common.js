@@ -20,7 +20,7 @@ function menu(){
 
 function mainSlider(){
     // 메인 슬라이더
-    var mainSlider = new Swiper('.mainSliderArea .swiper-container', {
+    var mainSlider = new Swiper('.mainSliderArea > div', {
         pagination: {
             el: '.mainSliderArea .swiper-pagination',
             type: 'fraction',

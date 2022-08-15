@@ -1,5 +1,5 @@
 /* 메인 슬라이더 */
-.mainSliderArea{margin-bottom: 6.875em;}
+.mainSliderArea{margin-bottom: 6.875em; overflow: hidden; position: relative;}
 .mainSliderArea .swiper-slide{background-repeat: no-repeat; background-position: center; background-size: cover;}
 .mainSliderArea .swiper-slide img{width: 100%; }
 .mainSliderArea .mainSlider_page{position: absolute; right: 0; bottom: 0; width: 17.188em; height: 95px; background-color: white; z-index: 10; border-top-left-radius: 50px; box-sizing: border-box;}
@@ -97,7 +97,7 @@
 .mainRecomArea ul li figure figcaption mark{font-size: 2.250em;}
 
 /* 메인 베너 */
-.mainBannerArea{text-align: center; margin-bottom: 7.500em;}
+.mainBannerArea{text-align: center; margin-bottom: 7.500em; overflow: hidden; position: relative;}
 .mainBannerArea .swiper-container{height: 35.000em;  background:url('../images/mainBannerBG.png') no-repeat center / cover;}
 .mainBannerArea .swiper-slide{display: flex; flex-direction: column; justify-content: flex-start; align-items: center; padding: 3.438em 0; box-sizing: border-box;}
 .mainBannerArea .swiper-slide div{display: flex; margin-bottom: 2.813em;}

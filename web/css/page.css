@@ -1,22 +1,23 @@
 /* 메인 슬라이더 */
-.mainSliderArea{margin-bottom: 120px;}
-.mainSliderArea .swiper-slide{background-repeat: no-repeat; background-position: center; background-size: cover;}
-.mainSliderArea .swiper-slide img{width: 100%; }
-.mainSliderArea .swiper-slide.mainSlider01{background-image: url('../images/mainSliderBG01.png')}
-.mainSliderArea .swiper-slide.mainSlider02{background-image: url('../images/mainSliderBG02.png')}
-.mainSliderArea .swiper-slide.mainSlider03{background-image: url('../images/mainSliderBG03.png')}
-.mainSliderArea .swiper-slide.mainSlider04{background-image: url('../images/mainSliderBG04.png')}
-.mainSliderArea .swiper-slide.mainSlider05{background-image: url('../images/mainSliderBG05.png')}
-.mainSliderArea .swiper-slide.mainSlider06{background-image: url('../images/mainSliderBG06.png')}
-.mainSliderArea .mainSlider_page{position: absolute; right: 0; bottom: 0; width: 600px; height: 95px; background-color: white; z-index: 10; border-top-left-radius: 50px;}
-.mainSliderArea .mainSlider_page > div{width: 240px; height: 100%; display: flex; justify-content: space-between; align-items: center; padding-left: 40px; box-sizing: border-box;}
-.mainSliderArea .mainSlider_page > div *{position: static; margin-top: 0;}
-.mainSliderArea .mainSlider_page > div .swiper-pagination{width: auto; font-size: 18px; font-weight: 900; color: #d4d4d4; }
-.mainSliderArea .mainSlider_page > div .swiper-pagination .swiper-pagination-current{color: black;}
-.mainSliderArea .mainSlider_page > div .swiper-button-prev,
-.mainSliderArea .mainSlider_page > div .swiper-button-next{opacity: 1; font-weight: 900;}
-.mainSliderArea .mainSlider_page > div .swiper-button-prev::after,
-.mainSliderArea .mainSlider_page > div .swiper-button-next::after{font-size: 20px; width: auto; height: auto; color: black;}
+.mainSliderArea{overflow: hidden;}
+.mainSliderArea > div{margin-bottom: 120px; position: relative;}
+.mainSliderArea > div .swiper-slide{background-repeat: no-repeat; background-position: center; background-size: cover;}
+.mainSliderArea > div .swiper-slide img{width: 100%; }
+.mainSliderArea > div .swiper-slide.mainSlider01{background-image: url('../images/mainSliderBG01.png')}
+.mainSliderArea > div .swiper-slide.mainSlider02{background-image: url('../images/mainSliderBG02.png')}
+.mainSliderArea > div .swiper-slide.mainSlider03{background-image: url('../images/mainSliderBG03.png')}
+.mainSliderArea > div .swiper-slide.mainSlider04{background-image: url('../images/mainSliderBG04.png')}
+.mainSliderArea > div .swiper-slide.mainSlider05{background-image: url('../images/mainSliderBG05.png')}
+.mainSliderArea > div .swiper-slide.mainSlider06{background-image: url('../images/mainSliderBG06.png')}
+.mainSliderArea > div .mainSlider_page{position: absolute; right: 0; bottom: 0; width: 600px; height: 95px; background-color: white; z-index: 10; border-top-left-radius: 50px;}
+.mainSliderArea > div .mainSlider_page > div{width: 240px; height: 100%; display: flex; justify-content: space-between; align-items: center; padding-left: 40px; box-sizing: border-box;}
+.mainSliderArea > div .mainSlider_page > div *{position: static; margin-top: 0;}
+.mainSliderArea > div .mainSlider_page > div .swiper-pagination{width: auto; font-size: 18px; font-weight: 900; color: #d4d4d4; }
+.mainSliderArea > div .mainSlider_page > div .swiper-pagination .swiper-pagination-current{color: black;}
+.mainSliderArea > div .mainSlider_page > div .swiper-button-prev,
+.mainSliderArea > div .mainSlider_page > div .swiper-button-next{opacity: 1; font-weight: 900;}
+.mainSliderArea > div .mainSlider_page > div .swiper-button-prev::after,
+.mainSliderArea > div .mainSlider_page > div .swiper-button-next::after{font-size: 20px; width: auto; height: auto; color: black;}
 
 
 /* 메인 비디오 */
@@ -110,7 +111,7 @@
 .mainRecomArea ul li figure figcaption mark{font-size: 30px;}
 
 /* 메인 베너 */
-.mainBannerArea{text-align: center; margin-bottom: 120px;}
+.mainBannerArea{text-align: center; margin-bottom: 120px; overflow: hidden; position: relative;}
 .mainBannerArea .swiper-container{height: 480px; background:url('../images/mainBannerBG.png') no-repeat center / cover;}
 .mainBannerArea .swiper-slide{display: flex; flex-direction: column; justify-content: flex-start; align-items: center; padding: 70px 0; box-sizing: border-box;}
 .mainBannerArea .swiper-slide div{display: flex; margin-bottom: 30px;}
